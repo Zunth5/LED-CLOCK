@@ -1,0 +1,19 @@
+Storage Target: SPI Flash MultiBoot FPGA
+Storage Family: Spartan6
+16M
+FF
+Untitled
+C:\Users\Zachary\Desktop\LEDgrid\
+
+MCS
+1
+No
+EDgrid\
+
+MCS
+Yes
+1
+No
+top
+
+MCS

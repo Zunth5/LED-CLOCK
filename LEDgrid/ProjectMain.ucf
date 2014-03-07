@@ -1,0 +1,28 @@
+NET "CLKin" LOC = V10;
+
+NET "SWin[0]"  LOC = T10;
+NET "SWin[1]"  LOC = T9;
+NET "SWin[2]"  LOC = V9;
+NET "SWin[3]"  LOC = M8;
+NET "SWin[4]"  LOC = N8;
+NET "SWin[5]"  LOC = U8;
+NET "SWin[6]"  LOC = V8;
+NET "SWin[7]"  LOC = T5;
+
+NET "BTNin"  LOC = C4;
+NET "BTN2in"  LOC = B8;
+
+NET "REFRESH_out" LOC = M10;
+NET "STEP_out"		LOC = N9;
+
+NET "YCONTROL_out[0]" LOC = J3;
+NET "YCONTROL_out[1]" LOC = J1;
+NET "YCONTROL_out[2]" LOC = K3;
+NET "YCONTROL_out[3]" LOC = K5;
+
+NET "COLOR_out[5]" LOC = U11;
+NET "COLOR_out[4]" LOC = V11;
+NET "COLOR_out[3]" LOC = T12;
+NET "COLOR_out[2]" LOC = V12;
+NET "COLOR_out[1]" LOC = N10;
+NET "COLOR_out[0]" LOC = P11;

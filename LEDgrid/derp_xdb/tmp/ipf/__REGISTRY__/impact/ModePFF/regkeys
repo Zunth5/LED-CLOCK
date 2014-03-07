@@ -1,0 +1,66 @@
+Autosize
+TRUE
+s
+Compressed
+FALSE
+s
+Direction
+UP
+s
+File Format
+mcs
+s
+Fill Value
+FF
+s
+Flash Data Width
+8
+s
+Flash Topology
+
+s
+Multiboot
+FALSE
+s
+Multiboot Bpi Chain
+
+s
+Multiboot Bpi Device
+
+s
+Multiboot Bpi Type
+
+s
+Number of Designs
+1
+i32
+Number of Prom Devices
+1
+i32
+PFFName
+PROMA
+s
+PFFPath
+C:\Users\Zachary\Desktop\LEDgrid\/
+s
+PFFSize
+0
+s
+Prom 0 name
+4m
+s
+Prom 0 size
+4194304
+i32
+RSPin Msb
+
+s
+SPI Selected
+TRUE
+s
+Submode
+SPI
+s
+Swap Bit
+FALSE
+s

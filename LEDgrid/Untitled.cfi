@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.49d
+# Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.49d
+DATE            03/04/2014 - 21:19
+SOURCE          C:\Users\Zachary\Desktop\LEDgrid\Untitled.mcs
+DEVICE          2048K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x18DC4B24
+START_ADDRESS   0x00000000 END_ADDRESS 0x00071543 DIRECTION_UP   "C:/Users/Zachary/Desktop/LEDgrid/projectmain.bit" 6slx16csg324
