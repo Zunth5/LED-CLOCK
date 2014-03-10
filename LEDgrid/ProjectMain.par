@@ -1,7 +1,7 @@
 Release 14.4 par P.49d (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-ZROX-LAPTOP01::  Tue Mar 04 17:26:53 2014
+ZROX-LAPTOP01::  Sun Mar 09 16:05:06 2014
 
 par -w -intstyle ise -ol high -mt off ProjectMain_map.ncd ProjectMain.ncd
 ProjectMain.pcf 
@@ -27,30 +27,36 @@ Device speed data version:  "PRODUCTION 1.23 2012-12-04".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                   137 out of  18,224    1%
-    Number used as Flip Flops:                 137
+  Number of Slice Registers:                   138 out of  18,224    1%
+    Number used as Flip Flops:                 138
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        271 out of   9,112    2%
-    Number used as logic:                      268 out of   9,112    2%
-      Number using O6 output only:             140
-      Number using O5 output only:              83
-      Number using O5 and O6:                   45
+  Number of Slice LUTs:                        204 out of   9,112    2%
+    Number used as logic:                      200 out of   9,112    2%
+      Number using O6 output only:              83
+      Number using O5 output only:              90
+      Number using O5 and O6:                   27
       Number used as ROM:                        0
-    Number used as Memory:                       0 out of   2,176    0%
+    Number used as Memory:                       1 out of   2,176    1%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:             1
+        Number using O6 output only:             1
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
     Number used exclusively as route-thrus:      3
       Number with same-slice register load:      0
       Number with same-slice carry load:         3
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    89 out of   2,278    3%
-  Number of MUXCYs used:                       156 out of   4,556    3%
-  Number of LUT Flip Flop pairs used:          277
-    Number with an unused Flip Flop:           149 out of     277   53%
-    Number with an unused LUT:                   6 out of     277    2%
-    Number of fully used LUT-FF pairs:         122 out of     277   44%
+  Number of occupied Slices:                    62 out of   2,278    2%
+  Number of MUXCYs used:                       112 out of   4,556    2%
+  Number of LUT Flip Flop pairs used:          212
+    Number with an unused Flip Flop:            78 out of     212   36%
+    Number with an unused LUT:                   8 out of     212    3%
+    Number of fully used LUT-FF pairs:         126 out of     212   59%
     Number of slice register sites lost
       to control set restrictions:               0 out of  18,224    0%
 
@@ -61,9 +67,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        23 out of     232    9%
-    Number of LOCed IOBs:                       23 out of      23  100%
-    IOB Flip Flops:                              6
+  Number of bonded IOBs:                        33 out of     232   14%
+    Number of LOCed IOBs:                       33 out of      33  100%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -76,9 +81,7 @@ Specific Feature Utilization:
   Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
   Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
   Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
-  Number of OLOGIC2/OSERDES2s:                   6 out of     248    2%
-    Number used as OLOGIC2s:                     6
-    Number used as OSERDES2s:                    0
+  Number of OLOGIC2/OSERDES2s:                   0 out of     248    0%
   Number of BSCANs:                              0 out of       4    0%
   Number of BUFHs:                               0 out of     128    0%
   Number of BUFPLLs:                             0 out of       8    0%
@@ -99,18 +102,26 @@ Router effort level (-rl):    High
 Starting initial Timing Analysis.  REAL time: 6 secs 
 Finished initial Timing Analysis.  REAL time: 6 secs 
 
+WARNING:Par:288 - The signal SWin<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SWin<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SWin<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SWin<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SWin<4>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SWin<5>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SWin<6>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SWin<7>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal BTNin_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal BTN2in_IBUF has no load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 921 unrouted;      REAL time: 7 secs 
+Phase  1  : 751 unrouted;      REAL time: 6 secs 
 
-Phase  2  : 742 unrouted;      REAL time: 7 secs 
+Phase  2  : 590 unrouted;      REAL time: 7 secs 
 
-Phase  3  : 206 unrouted;      REAL time: 8 secs 
+Phase  3  : 106 unrouted;      REAL time: 7 secs 
 
-Phase  4  : 206 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+Phase  4  : 106 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 
 Updating file: ProjectMain.ncd with current fully routed design.
 
@@ -124,8 +135,8 @@ Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 9
 
 Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
-Total REAL time to Router completion: 10 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+Total REAL time to Router completion: 9 secs 
 Total CPU time to Router completion: 9 secs 
 
 Partition Implementation Status
@@ -146,18 +157,17 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     4.339ns|     N/A|           0
-  in_BUFGP                                  | HOLD        |     0.467ns|            |       0|           0
+  Autotimespec constraint for clock net VGA | SETUP       |         N/A|     3.843ns|     N/A|           0
+  /CLK2_BUFG                                | HOLD        |     0.470ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net VGA | SETUP       |         N/A|     1.302ns|     N/A|           0
-  /CLK                                      | HOLD        |     0.457ns|            |       0|           0
-                                            | MINPERIOD   |         N/A|     1.639ns|     N/A|           0
+  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     3.812ns|     N/A|           0
+  in_BUFGP                                  | HOLD        |     0.415ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net VGA | SETUP       |         N/A|     4.111ns|     N/A|           0
-  /CLK2_BUFG                                | HOLD        |     0.426ns|            |       0|           0
+  Autotimespec constraint for clock net VGA | SETUP       |         N/A|     1.256ns|     N/A|           0
+  /CLK                                      | HOLD        |     0.456ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net VGA | SETUP       |         N/A|     3.763ns|     N/A|           0
-  /CLK3_BUFG                                | HOLD        |     0.924ns|            |       0|           0
+  Autotimespec constraint for clock net UAR | SETUP       |         N/A|     3.283ns|     N/A|           0
+  T_CON/UART_CLK_DIV/CLKRXD_out_BUFG        | HOLD        |     0.392ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -173,18 +183,18 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+WARNING:Par:283 - There are 10 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 11 secs 
+Total REAL time to PAR completion: 10 secs 
 Total CPU time to PAR completion: 10 secs 
 
-Peak Memory Usage:  307 MB
+Peak Memory Usage:  308 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 4
+Number of warning messages: 12
 Number of info messages: 2
 
 Writing design to file ProjectMain.ncd

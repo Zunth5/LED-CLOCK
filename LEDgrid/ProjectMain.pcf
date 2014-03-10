@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.49d on Tue Mar 04 17:26:48 2014
+// Written by: Map P.49d on Sun Mar 09 16:05:02 2014
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -9,6 +9,7 @@ COMP "COLOR_out<2>" LOCATE = SITE "V12" LEVEL 1;
 COMP "COLOR_out<3>" LOCATE = SITE "T12" LEVEL 1;
 COMP "COLOR_out<4>" LOCATE = SITE "V11" LEVEL 1;
 COMP "COLOR_out<5>" LOCATE = SITE "U11" LEVEL 1;
+COMP "TXD_out" LOCATE = SITE "K2" LEVEL 1;
 COMP "STEP_out" LOCATE = SITE "N9" LEVEL 1;
 COMP "SWin<0>" LOCATE = SITE "T10" LEVEL 1;
 COMP "SWin<1>" LOCATE = SITE "T9" LEVEL 1;
@@ -20,8 +21,17 @@ COMP "SWin<6>" LOCATE = SITE "V8" LEVEL 1;
 COMP "SWin<7>" LOCATE = SITE "T5" LEVEL 1;
 COMP "CLKin" LOCATE = SITE "V10" LEVEL 1;
 COMP "BTNin" LOCATE = SITE "C4" LEVEL 1;
+COMP "RXDin" LOCATE = SITE "K1" LEVEL 1;
 COMP "BTN2in" LOCATE = SITE "B8" LEVEL 1;
 COMP "REFRESH_out" LOCATE = SITE "M10" LEVEL 1;
+COMP "LED_out<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "LED_out<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "LED_out<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "LED_out<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "LED_out<4>" LOCATE = SITE "M11" LEVEL 1;
+COMP "LED_out<5>" LOCATE = SITE "N11" LEVEL 1;
+COMP "LED_out<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "LED_out<7>" LOCATE = SITE "T11" LEVEL 1;
 COMP "YCONTROL_out<0>" LOCATE = SITE "J3" LEVEL 1;
 COMP "YCONTROL_out<1>" LOCATE = SITE "J1" LEVEL 1;
 COMP "YCONTROL_out<2>" LOCATE = SITE "K3" LEVEL 1;

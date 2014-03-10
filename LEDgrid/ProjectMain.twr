@@ -32,38 +32,23 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Setup/Hold to clock CLKin
-------------+------------+------------+------------+------------+------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
-------------+------------+------------+------------+------------+------------------+--------+
-SWin<0>     |    1.334(R)|      FAST  |   -0.667(R)|      SLOW  |CLKin_BUFGP       |   0.000|
-SWin<1>     |    0.957(R)|      FAST  |   -0.032(R)|      SLOW  |CLKin_BUFGP       |   0.000|
-SWin<2>     |    1.073(R)|      SLOW  |   -0.262(R)|      SLOW  |CLKin_BUFGP       |   0.000|
-SWin<3>     |    1.488(R)|      SLOW  |   -0.686(R)|      SLOW  |CLKin_BUFGP       |   0.000|
-SWin<4>     |    1.171(R)|      FAST  |   -0.406(R)|      SLOW  |CLKin_BUFGP       |   0.000|
-SWin<5>     |    1.079(R)|      FAST  |   -0.126(R)|      SLOW  |CLKin_BUFGP       |   0.000|
-SWin<6>     |    0.760(R)|      FAST  |   -0.185(R)|      SLOW  |CLKin_BUFGP       |   0.000|
-SWin<7>     |    1.281(R)|      FAST  |   -0.748(R)|      SLOW  |CLKin_BUFGP       |   0.000|
-------------+------------+------------+------------+------------+------------------+--------+
-
 Clock to Setup on destination clock CLKin
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLKin          |    4.339|         |         |         |
+CLKin          |    3.812|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Tue Mar 04 17:27:15 2014 
+Analysis completed Sun Mar 09 16:05:26 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 238 MB
+Peak Memory Usage: 239 MB
 
 
 

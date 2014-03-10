@@ -6019,3 +6019,88 @@ par -w -intstyle ise -ol high -mt off ProjectMain_map.ncd ProjectMain.ncd Projec
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ProjectMain.twx ProjectMain.ncd -o ProjectMain.twr ProjectMain.pcf -ucf ProjectMain.ucf 
 bitgen -intstyle ise -f ProjectMain.ut ProjectMain.ncd 
 bitgen -intstyle ise -f ProjectMain.ut ProjectMain.ncd 
+xst -intstyle ise -ifn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.xst" -ofn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectMain.ucf -p xc6slx16-csg324-3 ProjectMain.ngc ProjectMain.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ProjectMain_map.ncd ProjectMain.ngd ProjectMain.pcf 
+par -w -intstyle ise -ol high -mt off ProjectMain_map.ncd ProjectMain.ncd ProjectMain.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ProjectMain.twx ProjectMain.ncd -o ProjectMain.twr ProjectMain.pcf -ucf ProjectMain.ucf 
+bitgen -intstyle ise -f ProjectMain.ut ProjectMain.ncd 
+xst -intstyle ise -ifn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.xst" -ofn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.syr" 
+xst -intstyle ise -ifn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.xst" -ofn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.syr" 
+xst -intstyle ise -ifn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.xst" -ofn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectMain.ucf -p xc6slx16-csg324-3 ProjectMain.ngc ProjectMain.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ProjectMain_map.ncd ProjectMain.ngd ProjectMain.pcf 
+par -w -intstyle ise -ol high -mt off ProjectMain_map.ncd ProjectMain.ncd ProjectMain.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ProjectMain.twx ProjectMain.ncd -o ProjectMain.twr ProjectMain.pcf -ucf ProjectMain.ucf 
+bitgen -intstyle ise -f ProjectMain.ut ProjectMain.ncd 
+xst -intstyle ise -ifn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.xst" -ofn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectMain.ucf -p xc6slx16-csg324-3 ProjectMain.ngc ProjectMain.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ProjectMain_map.ncd ProjectMain.ngd ProjectMain.pcf 
+par -w -intstyle ise -ol high -mt off ProjectMain_map.ncd ProjectMain.ncd ProjectMain.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ProjectMain.twx ProjectMain.ncd -o ProjectMain.twr ProjectMain.pcf -ucf ProjectMain.ucf 
+bitgen -intstyle ise -f ProjectMain.ut ProjectMain.ncd 
+xst -intstyle ise -ifn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.xst" -ofn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectMain.ucf -p xc6slx16-csg324-3 ProjectMain.ngc ProjectMain.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ProjectMain_map.ncd ProjectMain.ngd ProjectMain.pcf 
+par -w -intstyle ise -ol high -mt off ProjectMain_map.ncd ProjectMain.ncd ProjectMain.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ProjectMain.twx ProjectMain.ncd -o ProjectMain.twr ProjectMain.pcf -ucf ProjectMain.ucf 
+bitgen -intstyle ise -f ProjectMain.ut ProjectMain.ncd 
+xst -intstyle ise -ifn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.xst" -ofn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectMain.ucf -p xc6slx16-csg324-3 ProjectMain.ngc ProjectMain.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ProjectMain_map.ncd ProjectMain.ngd ProjectMain.pcf 
+par -w -intstyle ise -ol high -mt off ProjectMain_map.ncd ProjectMain.ncd ProjectMain.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ProjectMain.twx ProjectMain.ncd -o ProjectMain.twr ProjectMain.pcf -ucf ProjectMain.ucf 
+bitgen -intstyle ise -f ProjectMain.ut ProjectMain.ncd 
+xst -intstyle ise -ifn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.xst" -ofn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectMain.ucf -p xc6slx16-csg324-3 ProjectMain.ngc ProjectMain.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ProjectMain_map.ncd ProjectMain.ngd ProjectMain.pcf 
+par -w -intstyle ise -ol high -mt off ProjectMain_map.ncd ProjectMain.ncd ProjectMain.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ProjectMain.twx ProjectMain.ncd -o ProjectMain.twr ProjectMain.pcf -ucf ProjectMain.ucf 
+bitgen -intstyle ise -f ProjectMain.ut ProjectMain.ncd 
+xst -intstyle ise -ifn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.xst" -ofn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectMain.ucf -p xc6slx16-csg324-3 ProjectMain.ngc ProjectMain.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ProjectMain_map.ncd ProjectMain.ngd ProjectMain.pcf 
+par -w -intstyle ise -ol high -mt off ProjectMain_map.ncd ProjectMain.ncd ProjectMain.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ProjectMain.twx ProjectMain.ncd -o ProjectMain.twr ProjectMain.pcf -ucf ProjectMain.ucf 
+bitgen -intstyle ise -f ProjectMain.ut ProjectMain.ncd 
+xst -intstyle ise -ifn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.xst" -ofn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectMain.ucf -p xc6slx16-csg324-3 ProjectMain.ngc ProjectMain.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ProjectMain_map.ncd ProjectMain.ngd ProjectMain.pcf 
+par -w -intstyle ise -ol high -mt off ProjectMain_map.ncd ProjectMain.ncd ProjectMain.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ProjectMain.twx ProjectMain.ncd -o ProjectMain.twr ProjectMain.pcf -ucf ProjectMain.ucf 
+bitgen -intstyle ise -f ProjectMain.ut ProjectMain.ncd 
+xst -intstyle ise -ifn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.xst" -ofn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectMain.ucf -p xc6slx16-csg324-3 ProjectMain.ngc ProjectMain.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ProjectMain_map.ncd ProjectMain.ngd ProjectMain.pcf 
+par -w -intstyle ise -ol high -mt off ProjectMain_map.ncd ProjectMain.ncd ProjectMain.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ProjectMain.twx ProjectMain.ncd -o ProjectMain.twr ProjectMain.pcf -ucf ProjectMain.ucf 
+bitgen -intstyle ise -f ProjectMain.ut ProjectMain.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectMain.ucf -p xc6slx16-csg324-3 ProjectMain.ngc ProjectMain.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ProjectMain_map.ncd ProjectMain.ngd ProjectMain.pcf 
+par -w -intstyle ise -ol high -mt off ProjectMain_map.ncd ProjectMain.ncd ProjectMain.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ProjectMain.twx ProjectMain.ncd -o ProjectMain.twr ProjectMain.pcf -ucf ProjectMain.ucf 
+bitgen -intstyle ise -f ProjectMain.ut ProjectMain.ncd 
+xst -intstyle ise -ifn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.xst" -ofn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectMain.ucf -p xc6slx16-csg324-3 ProjectMain.ngc ProjectMain.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ProjectMain_map.ncd ProjectMain.ngd ProjectMain.pcf 
+par -w -intstyle ise -ol high -mt off ProjectMain_map.ncd ProjectMain.ncd ProjectMain.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ProjectMain.twx ProjectMain.ncd -o ProjectMain.twr ProjectMain.pcf -ucf ProjectMain.ucf 
+bitgen -intstyle ise -f ProjectMain.ut ProjectMain.ncd 
+xst -intstyle ise -ifn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.xst" -ofn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectMain.ucf -p xc6slx16-csg324-3 ProjectMain.ngc ProjectMain.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ProjectMain_map.ncd ProjectMain.ngd ProjectMain.pcf 
+par -w -intstyle ise -ol high -mt off ProjectMain_map.ncd ProjectMain.ncd ProjectMain.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ProjectMain.twx ProjectMain.ncd -o ProjectMain.twr ProjectMain.pcf -ucf ProjectMain.ucf 
+bitgen -intstyle ise -f ProjectMain.ut ProjectMain.ncd 
+xst -intstyle ise -ifn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.xst" -ofn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectMain.ucf -p xc6slx16-csg324-3 ProjectMain.ngc ProjectMain.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ProjectMain_map.ncd ProjectMain.ngd ProjectMain.pcf 
+par -w -intstyle ise -ol high -mt off ProjectMain_map.ncd ProjectMain.ncd ProjectMain.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ProjectMain.twx ProjectMain.ncd -o ProjectMain.twr ProjectMain.pcf -ucf ProjectMain.ucf 
+bitgen -intstyle ise -f ProjectMain.ut ProjectMain.ncd 
+xst -intstyle ise -ifn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.xst" -ofn "C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/ProjectMain.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectMain.ucf -p xc6slx16-csg324-3 ProjectMain.ngc ProjectMain.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ProjectMain_map.ncd ProjectMain.ngd ProjectMain.pcf 
+par -w -intstyle ise -ol high -mt off ProjectMain_map.ncd ProjectMain.ncd ProjectMain.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ProjectMain.twx ProjectMain.ncd -o ProjectMain.twr ProjectMain.pcf -ucf ProjectMain.ucf 
+bitgen -intstyle ise -f ProjectMain.ut ProjectMain.ncd 

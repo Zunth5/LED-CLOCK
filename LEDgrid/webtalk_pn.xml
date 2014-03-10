@@ -3,11 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Tue Mar 04 17:26:51 2014">
+<application name="pn" timeStamp="Sun Mar 09 16:05:05 2014">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="5516B81BBD0645ACB67A0443C1848859" type="project"/>
-<property name="ProjectIteration" value="992" type="project"/>
-<property name="ProjectFile" value="C:/Users/Zachary/Desktop/LEDgrid/LEDgrid.xise" type="project"/>
+<property name="ProjectIteration" value="1006" type="project"/>
+<property name="ProjectFile" value="C:/Users/Zachary/Documents/GitHub/LED-CLOCK/LEDgrid/LEDgrid.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2014-02-24T16:53:40" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
@@ -24,11 +24,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2014-02-24T16:53:40" type="design"/>
 <property name="PROP_intWbtProjectID" value="5516B81BBD0645ACB67A0443C1848859" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="992" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="1006" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_lockPinsUcfFile" value="changed" type="process"/>
-<property name="PROP_xilxBitgStart_Clk" value="JTAG Clock" type="process"/>
 <property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>
 <property name="PROPEXT_mapTimingMode_spartan6" value="Non Timing Driven" type="process"/>
 <property name="PROP_AutoTop" value="true" type="design"/>
@@ -40,7 +39,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_DevSpeed" value="-3" type="design"/>
 <property name="PROP_PreferredLanguage" value="VHDL" type="design"/>
 <property name="FILE_UCF" value="1" type="source"/>
-<property name="FILE_VHDL" value="2" type="source"/>
+<property name="FILE_VHDL" value="5" type="source"/>
 </section>
 </application>
 </document>

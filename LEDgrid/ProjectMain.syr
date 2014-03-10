@@ -105,10 +105,19 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" into library work
+Parsing VHDL file "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\UartLogic.vhd" into library work
+Parsing entity <UartLogic>.
+Parsing architecture <rtl> of entity <uartlogic>.
+Parsing VHDL file "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\UartClkDiv.vhd" into library work
+Parsing entity <UartClkDiv>.
+Parsing architecture <Behavioral> of entity <uartclkdiv>.
+Parsing VHDL file "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\VideoCon.vhd" into library work
 Parsing entity <VideoCon>.
 Parsing architecture <Behavioral> of entity <videocon>.
-Parsing VHDL file "C:\Users\Zachary\Desktop\LEDgrid\ProjectMain.vhd" into library work
+Parsing VHDL file "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\Uart.vhd" into library work
+Parsing entity <UART>.
+Parsing architecture <Behavioral> of entity <uart>.
+Parsing VHDL file "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\ProjectMain.vhd" into library work
 Parsing entity <ProjectMain>.
 Parsing architecture <Behavioral> of entity <projectmain>.
 
@@ -119,108 +128,140 @@ Parsing architecture <Behavioral> of entity <projectmain>.
 Elaborating entity <ProjectMain> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <VideoCon> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" Line 55: clk should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" Line 101: clk2 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" Line 121: clk3 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" Line 129: counter3 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" Line 130: colorin should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" Line 139: counter3 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" Line 140: colorin should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" Line 149: counter3 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" Line 150: colorin should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\VideoCon.vhd" Line 55: clk should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\VideoCon.vhd" Line 101: clk2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\VideoCon.vhd" Line 121: clk3 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\VideoCon.vhd" Line 129: counter3 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\VideoCon.vhd" Line 130: colorin should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\VideoCon.vhd" Line 139: counter3 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\VideoCon.vhd" Line 140: colorin should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\VideoCon.vhd" Line 149: counter3 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\VideoCon.vhd" Line 150: colorin should be on the sensitivity list of the process
+
+Elaborating entity <UART> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <UartClkDiv> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <UartLogic> (architecture <rtl>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\UartLogic.vhd" Line 55: Assignment to rx_frame_err ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\UartLogic.vhd" Line 125: Assignment to tx_over_run ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\ProjectMain.vhd" Line 288: datao should be on the sensitivity list of the process
+WARNING:HDLCompiler:634 - "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\ProjectMain.vhd" Line 78: Net <DATAI[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\ProjectMain.vhd" Line 80: Net <READI> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <ProjectMain>.
-    Related source file is "C:\Users\Zachary\Desktop\LEDgrid\ProjectMain.vhd".
+    Related source file is "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\ProjectMain.vhd".
+WARNING:Xst:647 - Input <SWin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <BTNin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <BTN2in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 1-bit register for signal <VAR2>.
-    Found 32-bit register for signal <COUNT2>.
-    Found 24-bit register for signal <COLOR>.
-    Found 32-bit register for signal <NUM2>.
-    Found 32-bit adder for signal <NUM2[31]_GND_5_o_add_1_OUT> created at line 147.
-    Found 32-bit adder for signal <COUNT2[31]_GND_5_o_add_9_OUT> created at line 160.
-    Found 32-bit subtractor for signal <COUNT2[31]_GND_5_o_sub_9_OUT<31:0>> created at line 158.
-    Found 32-bit comparator greater for signal <GND_5_o_NUM2[31]_LessThan_1_o> created at line 146
-    Found 32-bit comparator greater for signal <COUNT2[31]_GND_5_o_LessThan_3_o> created at line 150
-    Found 32-bit comparator greater for signal <GND_5_o_COUNT2[31]_LessThan_5_o> created at line 153
-    Found 5-bit comparator lessequal for signal <n0013> created at line 166
-    Found 5-bit comparator lessequal for signal <n0015> created at line 166
-    Found 5-bit comparator lessequal for signal <n0018> created at line 169
-    Found 5-bit comparator lessequal for signal <n0020> created at line 169
-    Found 5-bit comparator lessequal for signal <n0023> created at line 173
-    Found 5-bit comparator lessequal for signal <n0025> created at line 173
+INFO:Xst:3210 - "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\ProjectMain.vhd" line 135: Output port <XSEL_out> of the instance <VGA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\ProjectMain.vhd" line 135: Output port <YSEL_out> of the instance <VGA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\ProjectMain.vhd" line 146: Output port <READ_out> of the instance <UART_CON> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <DATAI> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <READI> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred  89 D-type flip-flop(s).
-	inferred   9 Comparator(s).
-	inferred   3 Multiplexer(s).
+	no macro.
 Unit <ProjectMain> synthesized.
 
 Synthesizing Unit <VideoCon>.
-    Related source file is "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd".
+    Related source file is "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\VideoCon.vhd".
     Found 1-bit register for signal <CLK>.
     Found 1-bit register for signal <CLK2>.
     Found 1-bit register for signal <STEP_out>.
-    Found 1-bit register for signal <CLK3>.
     Found 6-bit register for signal <XSEL_out>.
-    Found 6-bit register for signal <COLOR_out>.
     Found 32-bit register for signal <COUNTER2>.
     Found 1-bit register for signal <REFRESH_out>.
     Found 32-bit register for signal <COUNTER1>.
     Found 5-bit register for signal <VCOUNT>.
     Found 4-bit register for signal <YCON_out>.
     Found 5-bit register for signal <YSEL_out>.
-    Found 32-bit register for signal <COUNTER3>.
     Found 32-bit register for signal <COUNT>.
-    Found 1-bit register for signal <GND_6_o_COUNT2[31]_equal_5_o>.
+    Found 1-bit register for signal <COUNT2>.
     Found 32-bit adder for signal <COUNT[31]_GND_6_o_add_1_OUT> created at line 47.
     Found 32-bit adder for signal <COUNTER1[31]_GND_6_o_add_20_OUT> created at line 103.
     Found 5-bit adder for signal <VCOUNT[4]_GND_6_o_add_23_OUT> created at line 106.
-    Found 32-bit adder for signal <COUNTER3[31]_GND_6_o_add_38_OUT> created at line 123.
     Found 32-bit comparator greater for signal <GND_6_o_COUNT[31]_LessThan_1_o> created at line 46
     Found 32-bit comparator greater for signal <GND_6_o_COUNTER1[31]_LessThan_6_o> created at line 66
-    Found 5-bit comparator lessequal for signal <n0011> created at line 68
     Found 32-bit comparator greater for signal <GND_6_o_COUNTER1[31]_LessThan_20_o> created at line 102
     Found 5-bit comparator lessequal for signal <VCOUNT[4]_PWR_6_o_LessThan_23_o> created at line 105
-    Found 32-bit comparator greater for signal <GND_6_o_COUNTER3[31]_LessThan_38_o> created at line 122
-    Found 9-bit comparator lessequal for signal <n0051> created at line 129
-    Found 9-bit comparator lessequal for signal <n0056> created at line 139
-    Found 9-bit comparator lessequal for signal <n0061> created at line 149
     WARNING:Xst:2404 -  FFs/Latches <COUNT2<31:1>> (without init value) have a constant value of 0 in block <VideoCon>.
+    WARNING:Xst:2404 -  FFs/Latches <COLOR_out<5:0>> (without init value) have a constant value of 0 in block <VideoCon>.
     Summary:
-	inferred   4 Adder/Subtractor(s).
-	inferred 160 D-type flip-flop(s).
-	inferred   9 Comparator(s).
-	inferred   4 Multiplexer(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred 121 D-type flip-flop(s).
+	inferred   4 Comparator(s).
 Unit <VideoCon> synthesized.
+
+Synthesizing Unit <UART>.
+    Related source file is "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\Uart.vhd".
+INFO:Xst:3210 - "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\Uart.vhd" line 56: Output port <tx_empty> of the instance <UART_LOGIC> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <UART> synthesized.
+
+Synthesizing Unit <UartClkDiv>.
+    Related source file is "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\UartClkDiv.vhd".
+    Found 1-bit register for signal <CLKTXD_out>.
+    Found 32-bit register for signal <count2>.
+    Found 1-bit register for signal <CLKRXD_out>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_8_o_add_0_OUT> created at line 23.
+    Found 32-bit adder for signal <count2[31]_GND_8_o_add_4_OUT> created at line 35.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  66 D-type flip-flop(s).
+Unit <UartClkDiv> synthesized.
+
+Synthesizing Unit <UartLogic>.
+    Related source file is "C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\UartLogic.vhd".
+    Found 8-bit register for signal <rx_data>.
+    Found 4-bit register for signal <rx_sample_cnt>.
+    Found 4-bit register for signal <rx_cnt>.
+    Found 1-bit register for signal <rx_d1>.
+    Found 1-bit register for signal <rx_d2>.
+    Found 1-bit register for signal <rx_busy>.
+    Found 1-bit register for signal <tx_out>.
+    Found 8-bit register for signal <rx_reg>.
+    Found 1-bit register for signal <rx_is_empty>.
+    Found 4-bit adder for signal <rx_sample_cnt[3]_GND_9_o_add_3_OUT> created at line 86.
+    Found 4-bit adder for signal <rx_cnt[3]_GND_9_o_add_6_OUT> created at line 92.
+    Found 3-bit subtractor for signal <GND_9_o_GND_9_o_sub_10_OUT<2:0>> created at line 95.
+    Found 4-bit comparator greater for signal <GND_9_o_rx_cnt[3]_LessThan_8_o> created at line 94
+    Found 4-bit comparator greater for signal <rx_cnt[3]_PWR_9_o_LessThan_9_o> created at line 94
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  11 Multiplexer(s).
+Unit <UartLogic> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 6
+# Adders/Subtractors                                   : 8
+ 3-bit subtractor                                      : 1
  32-bit adder                                          : 4
- 32-bit addsub                                         : 1
+ 4-bit adder                                           : 2
  5-bit adder                                           : 1
-# Registers                                            : 19
- 1-bit register                                        : 7
- 24-bit register                                       : 1
- 32-bit register                                       : 6
- 4-bit register                                        : 1
+# Registers                                            : 25
+ 1-bit register                                        : 12
+ 32-bit register                                       : 5
+ 4-bit register                                        : 3
  5-bit register                                        : 2
- 6-bit register                                        : 2
-# Comparators                                          : 18
- 32-bit comparator greater                             : 7
- 5-bit comparator lessequal                            : 8
- 9-bit comparator lessequal                            : 3
-# Multiplexers                                         : 7
- 1-bit 2-to-1 multiplexer                              : 3
- 24-bit 2-to-1 multiplexer                             : 3
- 6-bit 2-to-1 multiplexer                              : 1
+ 6-bit register                                        : 1
+ 8-bit register                                        : 2
+# Comparators                                          : 6
+ 32-bit comparator greater                             : 3
+ 4-bit comparator greater                              : 2
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 11
+ 1-bit 2-to-1 multiplexer                              : 8
+ 4-bit 2-to-1 multiplexer                              : 3
 
 =========================================================================
 
@@ -228,11 +269,7 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-INFO:Xst:2261 - The FF/Latch <YCON_out_0> in Unit <VGA> is equivalent to the following FF/Latch, which will be removed : <YSEL_out_0> 
-INFO:Xst:2261 - The FF/Latch <YCON_out_1> in Unit <VGA> is equivalent to the following FF/Latch, which will be removed : <YSEL_out_1> 
-INFO:Xst:2261 - The FF/Latch <YCON_out_2> in Unit <VGA> is equivalent to the following FF/Latch, which will be removed : <YSEL_out_2> 
-INFO:Xst:2261 - The FF/Latch <YCON_out_3> in Unit <VGA> is equivalent to the following FF/Latch, which will be removed : <YSEL_out_3> 
-INFO:Xst:2261 - The FF/Latch <CLK3> in Unit <VGA> is equivalent to the following FF/Latch, which will be removed : <STEP_out> 
+WARNING:Xst:1710 - FF/Latch <tx_out> (without init value) has a constant value of 0 in block <UART_LOGIC>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <COUNTER2_31> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <COUNTER2_30> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <COUNTER2_29> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
@@ -264,37 +301,43 @@ WARNING:Xst:1293 - FF/Latch <COUNTER2_4> has a constant value of 0 in block <VGA
 WARNING:Xst:1293 - FF/Latch <COUNTER2_3> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <COUNTER2_2> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <COUNTER2_1> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <CLKTXD_out> of sequential type is unconnected in block <UART_CLK_DIV>.
 
-Synthesizing (advanced) Unit <ProjectMain>.
-The following registers are absorbed into counter <COUNT2>: 1 register on signal <COUNT2>.
-The following registers are absorbed into counter <NUM2>: 1 register on signal <NUM2>.
-Unit <ProjectMain> synthesized (advanced).
+Synthesizing (advanced) Unit <UartClkDiv>.
+The following registers are absorbed into counter <count2>: 1 register on signal <count2>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <UartClkDiv> synthesized (advanced).
+
+Synthesizing (advanced) Unit <UartLogic>.
+The following registers are absorbed into counter <rx_sample_cnt>: 1 register on signal <rx_sample_cnt>.
+Unit <UartLogic> synthesized (advanced).
 
 Synthesizing (advanced) Unit <VideoCon>.
 The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
 The following registers are absorbed into counter <COUNTER1>: 1 register on signal <COUNTER1>.
 The following registers are absorbed into counter <VCOUNT>: 1 register on signal <VCOUNT>.
-The following registers are absorbed into counter <COUNTER3>: 1 register on signal <COUNTER3>.
 Unit <VideoCon> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
+# Adders/Subtractors                                   : 2
+ 3-bit subtractor                                      : 1
+ 4-bit adder                                           : 1
 # Counters                                             : 6
  32-bit up counter                                     : 4
- 32-bit updown counter                                 : 1
+ 4-bit up counter                                      : 1
  5-bit up counter                                      : 1
-# Registers                                            : 84
- Flip-Flops                                            : 84
-# Comparators                                          : 18
- 32-bit comparator greater                             : 7
- 5-bit comparator lessequal                            : 8
- 9-bit comparator lessequal                            : 3
-# Multiplexers                                         : 7
- 1-bit 2-to-1 multiplexer                              : 3
- 24-bit 2-to-1 multiplexer                             : 3
- 6-bit 2-to-1 multiplexer                              : 1
+# Registers                                            : 79
+ Flip-Flops                                            : 79
+# Comparators                                          : 6
+ 32-bit comparator greater                             : 3
+ 4-bit comparator greater                              : 2
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 11
+ 1-bit 2-to-1 multiplexer                              : 8
+ 4-bit 2-to-1 multiplexer                              : 3
 
 =========================================================================
 
@@ -332,96 +375,75 @@ WARNING:Xst:1293 - FF/Latch <COUNTER2_4> has a constant value of 0 in block <Vid
 WARNING:Xst:1293 - FF/Latch <COUNTER2_3> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <COUNTER2_2> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <COUNTER2_1> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <YSEL_out_0> in Unit <VideoCon> is equivalent to the following FF/Latch, which will be removed : <YCON_out_0> 
-INFO:Xst:2261 - The FF/Latch <YSEL_out_1> in Unit <VideoCon> is equivalent to the following FF/Latch, which will be removed : <YCON_out_1> 
-INFO:Xst:2261 - The FF/Latch <YSEL_out_2> in Unit <VideoCon> is equivalent to the following FF/Latch, which will be removed : <YCON_out_2> 
-INFO:Xst:2261 - The FF/Latch <YSEL_out_3> in Unit <VideoCon> is equivalent to the following FF/Latch, which will be removed : <YCON_out_3> 
-INFO:Xst:2261 - The FF/Latch <CLK3> in Unit <VideoCon> is equivalent to the following FF/Latch, which will be removed : <STEP_out> 
+WARNING:Xst:1710 - FF/Latch <tx_out> (without init value) has a constant value of 0 in block <UartLogic>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <YCON_out_0> in Unit <VideoCon> is equivalent to the following FF/Latch, which will be removed : <YSEL_out_0> 
+INFO:Xst:2261 - The FF/Latch <YCON_out_1> in Unit <VideoCon> is equivalent to the following FF/Latch, which will be removed : <YSEL_out_1> 
+INFO:Xst:2261 - The FF/Latch <YCON_out_2> in Unit <VideoCon> is equivalent to the following FF/Latch, which will be removed : <YSEL_out_2> 
+INFO:Xst:2261 - The FF/Latch <YCON_out_3> in Unit <VideoCon> is equivalent to the following FF/Latch, which will be removed : <YSEL_out_3> 
+WARNING:Xst:2677 - Node <VGA/XSEL_out_5> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <VGA/XSEL_out_4> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <VGA/XSEL_out_3> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <VGA/XSEL_out_2> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <VGA/XSEL_out_1> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <VGA/XSEL_out_0> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <VGA/YSEL_out_4> of sequential type is unconnected in block <ProjectMain>.
 
 Optimizing unit <ProjectMain> ...
 
-Optimizing unit <VideoCon> ...
-WARNING:Xst:1293 - FF/Latch <COUNT2_30> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_31> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_31> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_30> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_29> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_28> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_27> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_26> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_25> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_24> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_23> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_22> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_21> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_20> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_19> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_18> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_1> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_2> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_3> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_4> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_5> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_6> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_7> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_8> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_9> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_10> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_11> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_12> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_13> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_14> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_15> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_16> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_17> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <NUM2_23> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <NUM2_24> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <NUM2_25> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <NUM2_26> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <NUM2_27> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <NUM2_28> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <NUM2_29> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <NUM2_30> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <NUM2_31> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_6> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_7> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_8> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_9> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_10> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_11> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_12> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_29> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_28> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_27> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_26> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_25> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_24> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_23> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_22> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_21> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_20> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_19> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_18> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_17> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_16> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_15> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_14> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_13> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <COLOR_6> in Unit <ProjectMain> is equivalent to the following 2 FFs/Latches, which will be removed : <COLOR_14> <COLOR_22> 
-INFO:Xst:2261 - The FF/Latch <COLOR_7> in Unit <ProjectMain> is equivalent to the following 2 FFs/Latches, which will be removed : <COLOR_15> <COLOR_23> 
+Optimizing unit <UartLogic> ...
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/CLKTXD_out> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_0> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_1> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_2> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_5> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_3> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_4> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_6> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_7> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_8> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_9> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_10> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_11> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_14> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_12> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_13> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_15> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_16> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_19> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_17> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_18> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_20> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_21> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_24> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_22> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_23> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_25> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_26> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_27> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_28> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_29> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_30> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_CLK_DIV/count_31> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <UART_CON/UART_LOGIC/rx_is_empty> of sequential type is unconnected in block <ProjectMain>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block ProjectMain, actual ratio is 3.
+Found area constraint ratio of 100 (+ 5) on block ProjectMain, actual ratio is 2.
 
 Final Macro Processing ...
+
+Processing Unit <ProjectMain> :
+	Found 2-bit shift register for signal <UART_CON/UART_LOGIC/rx_d2>.
+Unit <ProjectMain> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 143
- Flip-Flops                                            : 143
+# Registers                                            : 137
+ Flip-Flops                                            : 137
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
 
 =========================================================================
 
@@ -444,29 +466,32 @@ Top Level Output File Name         : ProjectMain.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 523
+# BELS                             : 430
 #      GND                         : 1
-#      INV                         : 11
-#      LUT1                        : 86
-#      LUT2                        : 79
+#      INV                         : 8
+#      LUT1                        : 93
+#      LUT2                        : 42
 #      LUT3                        : 7
-#      LUT4                        : 31
-#      LUT5                        : 50
-#      LUT6                        : 26
-#      MUXCY                       : 136
-#      MUXF7                       : 1
+#      LUT4                        : 12
+#      LUT5                        : 36
+#      LUT6                        : 27
+#      MUXCY                       : 107
 #      VCC                         : 1
-#      XORCY                       : 94
-# FlipFlops/Latches                : 143
-#      FD                          : 80
-#      FDE                         : 12
-#      FDR                         : 51
+#      XORCY                       : 96
+# FlipFlops/Latches                : 138
+#      FD                          : 55
+#      FDE                         : 13
+#      FDR                         : 66
+#      FDRE                        : 3
+#      FDSE                        : 1
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
 # Clock Buffers                    : 3
 #      BUFG                        : 2
 #      BUFGP                       : 1
-# IO Buffers                       : 20
-#      IBUF                        : 8
-#      OBUF                        : 12
+# IO Buffers                       : 22
+#      IBUF                        : 1
+#      OBUF                        : 21
 
 Device utilization summary:
 ---------------------------
@@ -475,21 +500,22 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             137  out of  18224     0%  
- Number of Slice LUTs:                  290  out of   9112     3%  
-    Number used as Logic:               290  out of   9112     3%  
+ Number of Slice Registers:             138  out of  18224     0%  
+ Number of Slice LUTs:                  226  out of   9112     2%  
+    Number used as Logic:               225  out of   9112     2%  
+    Number used as Memory:                1  out of   2176     0%  
+       Number used as SRL:                1
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    295
-   Number with an unused Flip Flop:     158  out of    295    53%  
-   Number with an unused LUT:             5  out of    295     1%  
-   Number of fully used LUT-FF pairs:   132  out of    295    44%  
-   Number of unique control sets:        10
+ Number of LUT Flip Flop pairs used:    232
+   Number with an unused Flip Flop:      94  out of    232    40%  
+   Number with an unused LUT:             6  out of    232     2%  
+   Number of fully used LUT-FF pairs:   132  out of    232    56%  
+   Number of unique control sets:        11
 
 IO Utilization: 
- Number of IOs:                          23
- Number of bonded IOBs:                  21  out of    232     9%  
-    IOB Flip Flops/Latches:               6
+ Number of IOs:                          33
+ Number of bonded IOBs:                  23  out of    232     9%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
@@ -515,10 +541,10 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLKin                              | BUFGP                  | 52    |
-VGA/CLK                            | NONE(VGA/COLOR_out_5)  | 17    |
-VGA/CLK2                           | BUFG                   | 42    |
-VGA/CLK3                           | BUFG                   | 32    |
+VGA/CLK                            | NONE(VGA/STEP_out)     | 5     |
+VGA/CLK2                           | BUFG                   | 41    |
+CLKin                              | BUFGP                  | 66    |
+UART_CON/UART_CLK_DIV/CLKRXD_out   | BUFG                   | 27    |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -530,42 +556,14 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 4.062ns (Maximum Frequency: 246.181MHz)
-   Minimum input arrival time before clock: 2.408ns
-   Maximum output required time after clock: 3.762ns
+   Minimum period: 4.714ns (Maximum Frequency: 212.130MHz)
+   Minimum input arrival time before clock: 1.801ns
+   Maximum output required time after clock: 3.634ns
    Maximum combinational path delay: No path found
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'CLKin'
-  Clock period: 3.844ns (frequency: 260.145MHz)
-  Total number of paths / destination ports: 1341 / 79
--------------------------------------------------------------------------
-Delay:               3.844ns (Levels of Logic = 7)
-  Source:            NUM2_7 (FF)
-  Destination:       NUM2_0 (FF)
-  Source Clock:      CLKin rising
-  Destination Clock: CLKin rising
-
-  Data Path: NUM2_7 to NUM2_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              3   0.447   0.995  NUM2_7 (NUM2_7)
-     LUT5:I0->O            1   0.203   0.000  Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_lut<0> (Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<0> (Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<1> (Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<2> (Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<3> (Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<4> (Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<4>)
-     MUXCY:CI->O          30   0.258   1.263  Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<5> (GND_5_o_NUM2[31]_LessThan_1_o_inv)
-     FDR:R                     0.430          NUM2_0
-    ----------------------------------------
-    Total                      3.844ns (1.586ns logic, 2.258ns route)
-                                       (41.3% logic, 58.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'VGA/CLK'
@@ -591,120 +589,151 @@ Delay:               1.950ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'VGA/CLK2'
-  Clock period: 4.062ns (frequency: 246.181MHz)
-  Total number of paths / destination ports: 3399 / 42
+  Clock period: 4.714ns (frequency: 212.130MHz)
+  Total number of paths / destination ports: 3481 / 73
 -------------------------------------------------------------------------
-Delay:               4.062ns (Levels of Logic = 9)
-  Source:            VGA/COUNTER1_2 (FF)
-  Destination:       VGA/VCOUNT_1 (FF)
+Delay:               4.714ns (Levels of Logic = 4)
+  Source:            VGA/COUNTER1_20 (FF)
+  Destination:       VGA/VCOUNT_2 (FF)
   Source Clock:      VGA/CLK2 rising
   Destination Clock: VGA/CLK2 rising
 
-  Data Path: VGA/COUNTER1_2 to VGA/VCOUNT_1
+  Data Path: VGA/COUNTER1_20 to VGA/VCOUNT_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               6   0.447   1.089  VGA/COUNTER1_2 (VGA/COUNTER1_2)
-     LUT5:I0->O            1   0.203   0.000  VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_lut<0> (VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<0> (VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<1> (VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<2> (VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<3> (VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<4> (VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<5> (VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<5>)
-     MUXCY:CI->O          42   0.213   1.538  VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<6> (VGA/GND_6_o_COUNTER1[31]_LessThan_20_o_inv)
-     LUT5:I3->O            1   0.203   0.000  VGA/YSEL_out_4_rstpot (VGA/YSEL_out_4_rstpot)
-     FD:D                      0.102          VGA/YSEL_out_4
+     FDR:C->Q              5   0.447   1.059  VGA/COUNTER1_20 (VGA/COUNTER1_20)
+     LUT6:I1->O            3   0.203   0.995  VGA/_n013854 (VGA/_n013853)
+     LUT6:I1->O            5   0.203   0.715  VGA/_n01382_SW0 (N01)
+     LUT4:I3->O            1   0.205   0.580  VGA/VCOUNT_2_rstpot_SW0 (N16)
+     LUT6:I5->O            1   0.205   0.000  VGA/VCOUNT_2_rstpot (VGA/VCOUNT_2_rstpot)
+     FD:D                      0.102          VGA/VCOUNT_2
     ----------------------------------------
-    Total                      4.062ns (1.435ns logic, 2.627ns route)
-                                       (35.3% logic, 64.7% route)
+    Total                      4.714ns (1.365ns logic, 3.349ns route)
+                                       (29.0% logic, 71.0% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'VGA/CLK3'
-  Clock period: 3.884ns (frequency: 257.471MHz)
-  Total number of paths / destination ports: 2224 / 32
+Timing constraint: Default period analysis for Clock 'CLKin'
+  Clock period: 4.473ns (frequency: 223.539MHz)
+  Total number of paths / destination ports: 4193 / 98
 -------------------------------------------------------------------------
-Delay:               3.884ns (Levels of Logic = 8)
-  Source:            VGA/COUNTER3_6 (FF)
-  Destination:       VGA/COUNTER3_31 (FF)
-  Source Clock:      VGA/CLK3 rising
-  Destination Clock: VGA/CLK3 rising
-
-  Data Path: VGA/COUNTER3_6 to VGA/COUNTER3_31
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               9   0.447   1.174  VGA/COUNTER3_6 (VGA/COUNTER3_6)
-     LUT5:I0->O            1   0.203   0.000  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_lut<0> (VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<0> (VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<1> (VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<2> (VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<3> (VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<4> (VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<4>)
-     MUXCY:CI->O          32   0.213   1.292  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<5> (VGA/GND_6_o_COUNTER3[31]_LessThan_38_o_inv)
-     LUT2:I1->O            1   0.205   0.000  VGA/COUNTER3_31_rstpot (VGA/COUNTER3_31_rstpot)
-     FD:D                      0.102          VGA/COUNTER3_31
-    ----------------------------------------
-    Total                      3.884ns (1.418ns logic, 2.466ns route)
-                                       (36.5% logic, 63.5% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'CLKin'
-  Total number of paths / destination ports: 20 / 20
--------------------------------------------------------------------------
-Offset:              2.408ns (Levels of Logic = 2)
-  Source:            SWin<0> (PAD)
-  Destination:       COLOR_0 (FF)
+Delay:               4.473ns (Levels of Logic = 3)
+  Source:            UART_CON/UART_CLK_DIV/count2_25 (FF)
+  Destination:       UART_CON/UART_CLK_DIV/count2_1 (FF)
+  Source Clock:      CLKin rising
   Destination Clock: CLKin rising
 
-  Data Path: SWin<0> to COLOR_0
+  Data Path: UART_CON/UART_CLK_DIV/count2_25 to UART_CON/UART_CLK_DIV/count2_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   1.222   0.879  SWin_0_IBUF (SWin_0_IBUF)
-     LUT4:I1->O            1   0.205   0.000  Mmux_GND_5_o_SWin[7]_mux_23_OUT11 (GND_5_o_SWin[7]_mux_23_OUT<0>)
-     FDR:D                     0.102          COLOR_0
+     FD:C->Q               2   0.447   0.981  UART_CON/UART_CLK_DIV/count2_25 (UART_CON/UART_CLK_DIV/count2_25)
+     LUT6:I0->O            1   0.203   0.924  UART_CON/UART_CLK_DIV/GND_8_o_count2[31]_equal_6_o<31>5 (UART_CON/UART_CLK_DIV/GND_8_o_count2[31]_equal_6_o<31>4)
+     LUT6:I1->O           33   0.203   1.410  UART_CON/UART_CLK_DIV/GND_8_o_count2[31]_equal_6_o<31>7 (UART_CON/UART_CLK_DIV/GND_8_o_count2[31]_equal_6_o)
+     LUT2:I0->O            1   0.203   0.000  UART_CON/UART_CLK_DIV/count2_1_rstpot (UART_CON/UART_CLK_DIV/count2_1_rstpot)
+     FD:D                      0.102          UART_CON/UART_CLK_DIV/count2_1
     ----------------------------------------
-    Total                      2.408ns (1.529ns logic, 0.879ns route)
-                                       (63.5% logic, 36.5% route)
+    Total                      4.473ns (1.158ns logic, 3.315ns route)
+                                       (25.9% logic, 74.1% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'VGA/CLK'
-  Total number of paths / destination ports: 8 / 8
+Timing constraint: Default period analysis for Clock 'UART_CON/UART_CLK_DIV/CLKRXD_out'
+  Clock period: 3.707ns (frequency: 269.793MHz)
+  Total number of paths / destination ports: 241 / 46
 -------------------------------------------------------------------------
-Offset:              3.597ns (Levels of Logic = 1)
-  Source:            VGA/COLOR_out_5 (FF)
-  Destination:       COLOR_out<5> (PAD)
-  Source Clock:      VGA/CLK rising
+Delay:               3.707ns (Levels of Logic = 2)
+  Source:            UART_CON/UART_LOGIC/rx_cnt_2 (FF)
+  Destination:       UART_CON/UART_LOGIC/rx_cnt_3 (FF)
+  Source Clock:      UART_CON/UART_CLK_DIV/CLKRXD_out rising
+  Destination Clock: UART_CON/UART_CLK_DIV/CLKRXD_out rising
 
-  Data Path: VGA/COLOR_out_5 to COLOR_out<5>
+  Data Path: UART_CON/UART_LOGIC/rx_cnt_2 to UART_CON/UART_LOGIC/rx_cnt_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              1   0.447   0.579  VGA/COLOR_out_5 (VGA/COLOR_out_5)
-     OBUF:I->O                 2.571          COLOR_out_5_OBUF (COLOR_out<5>)
+     FDE:C->Q             13   0.447   1.161  UART_CON/UART_LOGIC/rx_cnt_2 (UART_CON/UART_LOGIC/rx_cnt_2)
+     LUT3:I0->O            4   0.205   0.684  UART_CON/UART_LOGIC/_n0200_inv111 (UART_CON/UART_LOGIC/_n0200_inv11)
+     LUT5:I4->O            4   0.205   0.683  UART_CON/UART_LOGIC/_n0190_inv1 (UART_CON/UART_LOGIC/_n0190_inv)
+     FDE:CE                    0.322          UART_CON/UART_LOGIC/rx_cnt_0
     ----------------------------------------
-    Total                      3.597ns (3.018ns logic, 0.579ns route)
-                                       (83.9% logic, 16.1% route)
+    Total                      3.707ns (1.179ns logic, 2.528ns route)
+                                       (31.8% logic, 68.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UART_CON/UART_CLK_DIV/CLKRXD_out'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.801ns (Levels of Logic = 1)
+  Source:            RXDin (PAD)
+  Destination:       UART_CON/UART_LOGIC/Mshreg_rx_d2 (FF)
+  Destination Clock: UART_CON/UART_CLK_DIV/CLKRXD_out rising
+
+  Data Path: RXDin to UART_CON/UART_LOGIC/Mshreg_rx_d2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  RXDin_IBUF (RXDin_IBUF)
+     SRLC16E:D                -0.060          UART_CON/UART_LOGIC/Mshreg_rx_d2
+    ----------------------------------------
+    Total                      1.801ns (1.222ns logic, 0.579ns route)
+                                       (67.9% logic, 32.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'VGA/CLK2'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Offset:              3.762ns (Levels of Logic = 1)
-  Source:            VGA/YSEL_out_3 (FF)
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            VGA/YCON_out_3 (FF)
   Destination:       YCONTROL_out<3> (PAD)
   Source Clock:      VGA/CLK2 rising
 
-  Data Path: VGA/YSEL_out_3 to YCONTROL_out<3>
+  Data Path: VGA/YCON_out_3 to YCONTROL_out<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               6   0.447   0.744  VGA/YSEL_out_3 (VGA/YSEL_out_3)
+     FD:C->Q               2   0.447   0.616  VGA/YCON_out_3 (VGA/YCON_out_3)
      OBUF:I->O                 2.571          YCONTROL_out_3_OBUF (YCONTROL_out<3>)
     ----------------------------------------
-    Total                      3.762ns (3.018ns logic, 0.744ns route)
-                                       (80.2% logic, 19.8% route)
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'UART_CON/UART_CLK_DIV/CLKRXD_out'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            UART_CON/UART_LOGIC/rx_data_7 (FF)
+  Destination:       LED_out<7> (PAD)
+  Source Clock:      UART_CON/UART_CLK_DIV/CLKRXD_out rising
+
+  Data Path: UART_CON/UART_LOGIC/rx_data_7 to LED_out<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  UART_CON/UART_LOGIC/rx_data_7 (UART_CON/UART_LOGIC/rx_data_7)
+     OBUF:I->O                 2.571          LED_out_7_OBUF (LED_out<7>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'VGA/CLK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            VGA/REFRESH_out (FF)
+  Destination:       REFRESH_out (PAD)
+  Source Clock:      VGA/CLK rising
+
+  Data Path: VGA/REFRESH_out to REFRESH_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.447   0.579  VGA/REFRESH_out (VGA/REFRESH_out)
+     OBUF:I->O                 2.571          REFRESH_out_OBUF (REFRESH_out)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
 
 =========================================================================
 
@@ -716,20 +745,24 @@ Clock to Setup on destination clock CLKin
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLKin          |    3.844|         |         |         |
-VGA/CLK        |    4.797|         |         |         |
-VGA/CLK2       |    3.164|         |         |         |
+CLKin          |    4.473|         |         |         |
 ---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UART_CON/UART_CLK_DIV/CLKRXD_out
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+UART_CON/UART_CLK_DIV/CLKRXD_out|    3.707|         |         |         |
+--------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock VGA/CLK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLKin          |    5.527|         |         |         |
 VGA/CLK        |    1.950|         |         |         |
-VGA/CLK2       |    7.727|         |         |         |
-VGA/CLK3       |    5.574|         |         |         |
+VGA/CLK2       |    7.626|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock VGA/CLK2
@@ -737,28 +770,20 @@ Clock to Setup on destination clock VGA/CLK2
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-VGA/CLK2       |    4.062|         |         |         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock VGA/CLK3
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-VGA/CLK3       |    3.884|         |         |         |
+VGA/CLK2       |    4.714|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.83 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.14 secs
  
 --> 
 
 Total memory usage is 233496 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  140 (   0 filtered)
-Number of infos    :   13 (   0 filtered)
+Number of warnings :  127 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
 
