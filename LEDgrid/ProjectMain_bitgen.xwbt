@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\ProjectMain.ncd
-OUTFILE=C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid\ProjectMain.bit
+INFILE=C:\Users\Zachary\Desktop\LEDgrid\ProjectMain.ncd
+OUTFILE=C:\Users\Zachary\Desktop\LEDgrid\ProjectMain.bit
 FAMILY=Spartan6
 PART=xc6slx16-3csg324
-WORKINGDIR=C:\Users\Zachary\Documents\GitHub\LED-CLOCK\LEDgrid
+WORKINGDIR=C:\Users\Zachary\Desktop\LEDgrid
 LICENSE=WebPack
 USER_INFO=209183470_0_0_517

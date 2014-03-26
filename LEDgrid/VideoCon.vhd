@@ -64,7 +64,7 @@ VHSHIFTER : process (CLKin)
 				COUNT2 <= 1;
 			end if;
 			if COUNTER1 < 64 then --SET COLOR AND DEFINE X AXIS SELECT
-				XSEL_out(5 downto 0) <= conv_std_logic_vector(COUNTER1,6);
+				XSEL_out(5 downto 0) <= 63 - conv_std_logic_vector(COUNTER1,6);
 				if VCOUNT <= 15 then
 					COLOR_out(0) <= COLOR(0);
 					COLOR_out(1) <= '0';
@@ -110,7 +110,7 @@ VHSHIFTER : process (CLKin)
 					end if;
 				if COUNTER1 = 129 then --RENEW THE Y CONTROL AND AXIS OUTPUT VALUES
 					YCON_out(3 downto 0) <= VCOUNT(3 downto 0);
-					YSEL_out(4 downto 0) <= VCOUNT;
+					YSEL_out(4 downto 0) <= 31 - VCOUNT;
 				end if;			
 			else
 				COUNTER1 <= 0;

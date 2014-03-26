@@ -1,14 +1,14 @@
 --------------------------------------------------------------------------------
-Release 14.4 Trace  (nt64)
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
 -n 3 -fastpaths -xml ProjectMain.twx ProjectMain.ncd -o ProjectMain.twr
 ProjectMain.pcf -ucf ProjectMain.ucf
 
 Design file:              ProjectMain.ncd
 Physical constraint file: ProjectMain.pcf
-Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2012-12-04)
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -32,23 +32,38 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Clock CLKin to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+LED_out<0>  |         6.416(R)|      SLOW  |         3.013(R)|      FAST  |CLKin_BUFGP       |   0.000|
+LED_out<1>  |         6.416(R)|      SLOW  |         3.013(R)|      FAST  |CLKin_BUFGP       |   0.000|
+LED_out<2>  |         6.414(R)|      SLOW  |         3.011(R)|      FAST  |CLKin_BUFGP       |   0.000|
+LED_out<3>  |         6.414(R)|      SLOW  |         3.011(R)|      FAST  |CLKin_BUFGP       |   0.000|
+LED_out<4>  |         6.343(R)|      SLOW  |         2.940(R)|      FAST  |CLKin_BUFGP       |   0.000|
+LED_out<5>  |         6.343(R)|      SLOW  |         2.940(R)|      FAST  |CLKin_BUFGP       |   0.000|
+LED_out<6>  |         6.393(R)|      SLOW  |         2.990(R)|      FAST  |CLKin_BUFGP       |   0.000|
+LED_out<7>  |         6.393(R)|      SLOW  |         2.990(R)|      FAST  |CLKin_BUFGP       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
 Clock to Setup on destination clock CLKin
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLKin          |    3.812|         |         |         |
+CLKin          |    7.238|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sun Mar 09 16:05:26 2014 
+Analysis completed Tue Mar 25 22:52:14 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 239 MB
+Peak Memory Usage: 256 MB
 
 
 
