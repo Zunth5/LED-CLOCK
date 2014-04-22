@@ -1,16 +1,16 @@
-Release 14.4 - xst P.49d (nt64)
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: ProjectMain.prj
 
@@ -99,74 +99,200 @@ DSP48 Utilization Ratio            : 100
 Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
 =========================================================================
 
 
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" into library work
+Parsing VHDL file "D:\LEDgrid\ipcore_dir\CHAR_ROM.vhd" into library work
+Parsing entity <CHAR_ROM>.
+Parsing architecture <CHAR_ROM_a> of entity <char_rom>.
+Parsing VHDL file "D:\LEDgrid\UartLogic.vhd" into library work
+Parsing entity <UartLogic>.
+Parsing architecture <rtl> of entity <uartlogic>.
+Parsing VHDL file "D:\LEDgrid\UartClkDiv.vhd" into library work
+Parsing entity <UartClkDiv>.
+Parsing architecture <Behavioral> of entity <uartclkdiv>.
+Parsing VHDL file "D:\LEDgrid\VideoCon.vhd" into library work
 Parsing entity <VideoCon>.
 Parsing architecture <Behavioral> of entity <videocon>.
-Parsing VHDL file "C:\Users\Zachary\Desktop\LEDgrid\ProjectMain.vhd" into library work
+Parsing VHDL file "D:\LEDgrid\Uart.vhd" into library work
+Parsing entity <UART>.
+Parsing architecture <Behavioral> of entity <uart>.
+Parsing VHDL file "D:\LEDgrid\SRAM_Controller.vhd" into library work
+Parsing entity <SRAM_Controller>.
+Parsing architecture <Behavioral> of entity <sram_controller>.
+Parsing VHDL file "D:\LEDgrid\DATA_CONSTRUCT.vhd" into library work
+Parsing entity <DATA_CONSTRUCT>.
+Parsing architecture <Behavioral> of entity <data_construct>.
+Parsing VHDL file "D:\LEDgrid\ASCII_LUT.vhd" into library work
+Parsing entity <ASCII_LUT>.
+Parsing architecture <Behavioral> of entity <ascii_lut>.
+Parsing VHDL file "D:\LEDgrid\ProjectMain.vhd" into library work
 Parsing entity <ProjectMain>.
 Parsing architecture <Behavioral> of entity <projectmain>.
+WARNING:HDLCompiler:946 - "D:\LEDgrid\ProjectMain.vhd" Line 186: Actual for formal port writein is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
 
 Elaborating entity <ProjectMain> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "D:\LEDgrid\ProjectMain.vhd" Line 42: Using initial value 0 for hexsel1 since it is never assigned
+WARNING:HDLCompiler:871 - "D:\LEDgrid\ProjectMain.vhd" Line 43: Using initial value 0 for hexsel2 since it is never assigned
 
 Elaborating entity <VideoCon> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" Line 55: clk should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" Line 101: clk2 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" Line 121: clk3 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" Line 129: counter3 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" Line 130: colorin should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" Line 139: counter3 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" Line 140: colorin should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" Line 149: counter3 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd" Line 150: colorin should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\LEDgrid\VideoCon.vhd" Line 56: clk should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\LEDgrid\VideoCon.vhd" Line 103: clk2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\LEDgrid\VideoCon.vhd" Line 123: clk3 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\LEDgrid\VideoCon.vhd" Line 131: counter3 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\LEDgrid\VideoCon.vhd" Line 132: colorin should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\LEDgrid\VideoCon.vhd" Line 141: counter3 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\LEDgrid\VideoCon.vhd" Line 142: colorin should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\LEDgrid\VideoCon.vhd" Line 151: counter3 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\LEDgrid\VideoCon.vhd" Line 152: colorin should be on the sensitivity list of the process
+
+Elaborating entity <UART> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <UartClkDiv> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <UartLogic> (architecture <rtl>) from library <work>.
+WARNING:HDLCompiler:1127 - "D:\LEDgrid\UartLogic.vhd" Line 55: Assignment to rx_frame_err ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\LEDgrid\UartLogic.vhd" Line 125: Assignment to tx_over_run ignored, since the identifier is never used
+
+Elaborating entity <DATA_CONSTRUCT> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\LEDgrid\DATA_CONSTRUCT.vhd" Line 76: updatein should be on the sensitivity list of the process
+
+Elaborating entity <SRAM_Controller> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:1127 - "D:\LEDgrid\SRAM_Controller.vhd" Line 48: Assignment to qwrite ignored, since the identifier is never used
+
+Elaborating entity <CHAR_ROM> (architecture <CHAR_ROM_a>) from library <work>.
+
+Elaborating entity <ASCII_LUT> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\LEDgrid\ProjectMain.vhd" Line 208: clk2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\LEDgrid\ProjectMain.vhd" Line 310: mode should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <ProjectMain>.
-    Related source file is "C:\Users\Zachary\Desktop\LEDgrid\ProjectMain.vhd".
-WARNING:Xst:647 - Input <BTNin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <BTN2in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 1-bit register for signal <VAR2>.
+    Related source file is "D:\LEDgrid\ProjectMain.vhd".
+INFO:Xst:3210 - "D:\LEDgrid\ProjectMain.vhd" line 168: Output port <UARTFOR_out> of the instance <MAKE_DATA> is unconnected or connected to loadless signal.
+    Found 15-bit register for signal <CSEL>.
+    Found 512-bit register for signal <PIXDISP[511]_dff_810_OUT>.
+    Found 23-bit register for signal <GND_5_o_dff_817_OUT>.
+    Found 32-bit register for signal <GND_5_o_dff_818_OUT>.
+    Found 296-bit register for signal <HEXVEC[295]_dff_1169_OUT>.
+    Found 32-bit register for signal <GND_5_o_dff_1170_OUT>.
+    Found 32-bit register for signal <GND_5_o_dff_1171_OUT>.
+    Found 32-bit register for signal <COUNT3>.
+    Found 1-bit register for signal <CLK2>.
+    Found 296-bit register for signal <HEXVEC>.
+    Found 23-bit register for signal <PIXRAM2>.
+    Found 15-bit register for signal <COLOR>.
+    Found 1-bit register for signal <READRAM>.
+    Found 512-bit register for signal <PIXDISP>.
+    Found 23-bit register for signal <PIXRAMX>.
     Found 32-bit register for signal <COUNT2>.
-    Found 24-bit register for signal <COLOR>.
-    Found 32-bit register for signal <NUM2>.
-    Found 32-bit adder for signal <NUM2[31]_GND_5_o_add_1_OUT> created at line 147.
-    Found 32-bit adder for signal <COUNT2[31]_GND_5_o_add_9_OUT> created at line 160.
-    Found 32-bit subtractor for signal <COUNT2[31]_GND_5_o_sub_9_OUT<31:0>> created at line 158.
-    Found 32-bit comparator greater for signal <GND_5_o_NUM2[31]_LessThan_1_o> created at line 146
-    Found 32-bit comparator greater for signal <COUNT2[31]_GND_5_o_LessThan_3_o> created at line 150
-    Found 32-bit comparator greater for signal <GND_5_o_COUNT2[31]_LessThan_5_o> created at line 153
-    Found 5-bit comparator lessequal for signal <n0013> created at line 166
-    Found 5-bit comparator lessequal for signal <n0015> created at line 166
-    Found 5-bit comparator lessequal for signal <n0018> created at line 169
-    Found 5-bit comparator lessequal for signal <n0020> created at line 169
-    Found 5-bit comparator lessequal for signal <n0023> created at line 173
-    Found 5-bit comparator lessequal for signal <n0025> created at line 173
+    Found 8-bit register for signal <ASCII1>.
+    Found 32-bit register for signal <COUNT>.
+    Found 1-bit register for signal <CLICK>.
+    Found 32-bit register for signal <NUM>.
+    Found 32-bit register for signal <NUM3>.
+    Found 1-bit register for signal <COLOR2<2>>.
+    Found 1-bit register for signal <COLOR2<1>>.
+    Found 1-bit register for signal <COLOR2<0>>.
+    Found 32-bit register for signal <COUNT4>.
+    Found 1-bit register for signal <GND_5_o_RAMCON_DFF_665_q>.
+    Found 32-bit adder for signal <COUNT4[31]_GND_5_o_add_1_OUT> created at line 210.
+    Found 5-bit adder for signal <CSEL[4]_GND_5_o_add_5_OUT> created at line 215.
+    Found 5-bit adder for signal <CSEL[9]_GND_5_o_add_11_OUT> created at line 219.
+    Found 5-bit adder for signal <CSEL[14]_GND_5_o_add_17_OUT> created at line 223.
+    Found 32-bit adder for signal <COUNT3[31]_GND_5_o_add_28_OUT> created at line 233.
+    Found 10-bit adder for signal <n1598> created at line 239.
+    Found 10-bit adder for signal <n1663> created at line 240.
+    Found 10-bit adder for signal <n1696> created at line 248.
+    Found 32-bit adder for signal <n1421> created at line 253.
+    Found 32-bit adder for signal <COUNT2[31]_GND_5_o_add_815_OUT> created at line 256.
+    Found 32-bit adder for signal <COUNT[31]_GND_5_o_add_826_OUT> created at line 280.
+    Found 32-bit adder for signal <n1431> created at line 284.
+    Found 32-bit adder for signal <NUM[31]_GND_5_o_add_1164_OUT> created at line 286.
+    Found 32-bit adder for signal <NUM3[31]_GND_5_o_add_1167_OUT> created at line 291.
+    Found 5-bit subtractor for signal <GND_5_o_GND_5_o_sub_9_OUT<4:0>> created at line 217.
+    Found 5-bit subtractor for signal <GND_5_o_GND_5_o_sub_15_OUT<4:0>> created at line 221.
+    Found 5-bit subtractor for signal <GND_5_o_GND_5_o_sub_21_OUT<4:0>> created at line 225.
+    Found 3-bit subtractor for signal <GND_5_o_GND_5_o_sub_1174_OUT<2:0>> created at line 297.
+    Found 23-bit adder for signal <_n2087> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_36_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_46_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_48_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_54_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_58_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_60_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_62_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_64_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_68_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_96_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_82_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_72_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_76_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_40_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_94_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_80_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_84_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_92_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_52_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_90_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_56_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_70_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_74_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_44_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_88_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_78_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_66_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_86_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_42_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_34_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_38_OUT> created at line 239.
+    Found 23-bit adder for signal <GND_5_o_GND_5_o_add_50_OUT> created at line 239.
+    Found 1-bit 7-to-1 multiplexer for signal <GND_5_o_X_5_o_Mux_1174_o> created at line 297.
+    Found 32-bit comparator greater for signal <GND_5_o_COUNT4[31]_LessThan_1_o> created at line 209
+    Found 32-bit comparator lessequal for signal <n0004> created at line 214
+    Found 32-bit comparator lessequal for signal <n0006> created at line 214
+    Found 32-bit comparator lessequal for signal <n0010> created at line 216
+    Found 32-bit comparator lessequal for signal <n0012> created at line 216
+    Found 32-bit comparator lessequal for signal <n0016> created at line 218
+    Found 32-bit comparator lessequal for signal <n0018> created at line 218
+    Found 32-bit comparator lessequal for signal <n0022> created at line 220
+    Found 32-bit comparator lessequal for signal <n0024> created at line 220
+    Found 32-bit comparator lessequal for signal <n0028> created at line 222
+    Found 32-bit comparator lessequal for signal <n0030> created at line 222
+    Found 32-bit comparator lessequal for signal <n0034> created at line 224
+    Found 32-bit comparator lessequal for signal <n0036> created at line 224
+    Found 32-bit comparator lessequal for signal <GND_5_o_COUNT2[31]_LessThan_815_o> created at line 255
+    Found 32-bit comparator greater for signal <GND_5_o_COUNT[31]_LessThan_825_o> created at line 276
+    Found 32-bit comparator greater for signal <GND_5_o_NUM[31]_LessThan_1164_o> created at line 285
+    Found 32-bit comparator greater for signal <GND_5_o_NUM3[31]_LessThan_1167_o> created at line 290
     Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred  89 D-type flip-flop(s).
-	inferred   9 Comparator(s).
-	inferred   3 Multiplexer(s).
+	inferred  51 Adder/Subtractor(s).
+	inferred 2018 D-type flip-flop(s).
+	inferred  17 Comparator(s).
+	inferred 878 Multiplexer(s).
 Unit <ProjectMain> synthesized.
 
 Synthesizing Unit <VideoCon>.
-    Related source file is "C:\Users\Zachary\Desktop\LEDgrid\VideoCon.vhd".
+    Related source file is "D:\LEDgrid\VideoCon.vhd".
     Found 1-bit register for signal <CLK>.
     Found 1-bit register for signal <CLK2>.
     Found 1-bit register for signal <STEP_out>.
     Found 1-bit register for signal <CLK3>.
     Found 6-bit register for signal <XSEL_out>.
+    Found 6-bit register for signal <XSEL2_out>.
     Found 6-bit register for signal <COLOR_out>.
     Found 32-bit register for signal <COUNTER2>.
     Found 1-bit register for signal <REFRESH_out>.
@@ -177,50 +303,287 @@ Synthesizing Unit <VideoCon>.
     Found 32-bit register for signal <COUNTER3>.
     Found 32-bit register for signal <COUNT>.
     Found 1-bit register for signal <GND_6_o_COUNT2[31]_equal_5_o>.
-    Found 32-bit adder for signal <COUNT[31]_GND_6_o_add_1_OUT> created at line 47.
-    Found 32-bit adder for signal <COUNTER1[31]_GND_6_o_add_20_OUT> created at line 103.
-    Found 5-bit adder for signal <VCOUNT[4]_GND_6_o_add_23_OUT> created at line 106.
-    Found 32-bit adder for signal <COUNTER3[31]_GND_6_o_add_38_OUT> created at line 123.
-    Found 32-bit comparator greater for signal <GND_6_o_COUNT[31]_LessThan_1_o> created at line 46
-    Found 32-bit comparator greater for signal <GND_6_o_COUNTER1[31]_LessThan_6_o> created at line 66
-    Found 5-bit comparator lessequal for signal <n0011> created at line 68
-    Found 32-bit comparator greater for signal <GND_6_o_COUNTER1[31]_LessThan_20_o> created at line 102
-    Found 5-bit comparator lessequal for signal <VCOUNT[4]_PWR_6_o_LessThan_23_o> created at line 105
-    Found 32-bit comparator greater for signal <GND_6_o_COUNTER3[31]_LessThan_38_o> created at line 122
-    Found 9-bit comparator lessequal for signal <n0051> created at line 129
-    Found 9-bit comparator lessequal for signal <n0056> created at line 139
-    Found 9-bit comparator lessequal for signal <n0061> created at line 149
+    Found finite state machine <FSM_0> for signal <COUNTER2>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 2                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 1                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | _n0153 (positive)                              |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00000000000000000000000000000000               |
+    | Power Up State     | 00000000000000000000000000000000               |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <COUNT[31]_GND_6_o_add_1_OUT> created at line 48.
+    Found 32-bit adder for signal <COUNTER1[31]_GND_6_o_add_24_OUT> created at line 105.
+    Found 5-bit adder for signal <VCOUNT[4]_GND_6_o_add_27_OUT> created at line 108.
+    Found 32-bit adder for signal <COUNTER3[31]_GND_6_o_add_43_OUT> created at line 125.
+    Found 6-bit subtractor for signal <GND_6_o_GND_6_o_sub_7_OUT<5:0>> created at line 68.
+    Found 6-bit subtractor for signal <GND_6_o_GND_6_o_sub_8_OUT<5:0>> created at line 69.
+    Found 5-bit subtractor for signal <GND_6_o_GND_6_o_sub_32_OUT<4:0>> created at line 115.
+    Found 32-bit comparator greater for signal <GND_6_o_COUNT[31]_LessThan_1_o> created at line 47
+    Found 32-bit comparator greater for signal <GND_6_o_COUNTER1[31]_LessThan_6_o> created at line 67
+    Found 5-bit comparator lessequal for signal <n0013> created at line 70
+    Found 32-bit comparator greater for signal <GND_6_o_COUNTER1[31]_LessThan_24_o> created at line 104
+    Found 5-bit comparator lessequal for signal <VCOUNT[4]_PWR_6_o_LessThan_27_o> created at line 107
+    Found 32-bit comparator greater for signal <GND_6_o_COUNTER3[31]_LessThan_43_o> created at line 124
+    Found 6-bit comparator lessequal for signal <n0056> created at line 131
+    Found 6-bit comparator lessequal for signal <n0061> created at line 141
+    Found 6-bit comparator lessequal for signal <n0066> created at line 151
     WARNING:Xst:2404 -  FFs/Latches <COUNT2<31:1>> (without init value) have a constant value of 0 in block <VideoCon>.
     Summary:
-	inferred   4 Adder/Subtractor(s).
-	inferred 160 D-type flip-flop(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred 134 D-type flip-flop(s).
 	inferred   9 Comparator(s).
 	inferred   4 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
 Unit <VideoCon> synthesized.
+
+Synthesizing Unit <UART>.
+    Related source file is "D:\LEDgrid\Uart.vhd".
+INFO:Xst:3210 - "D:\LEDgrid\Uart.vhd" line 56: Output port <tx_empty> of the instance <UART_LOGIC> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <UART> synthesized.
+
+Synthesizing Unit <UartClkDiv>.
+    Related source file is "D:\LEDgrid\UartClkDiv.vhd".
+    Found 1-bit register for signal <CLKTXD_out>.
+    Found 32-bit register for signal <count2>.
+    Found 1-bit register for signal <CLKRXD_out>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_8_o_add_0_OUT> created at line 23.
+    Found 32-bit adder for signal <count2[31]_GND_8_o_add_4_OUT> created at line 35.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  66 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <UartClkDiv> synthesized.
+
+Synthesizing Unit <UartLogic>.
+    Related source file is "D:\LEDgrid\UartLogic.vhd".
+    Found 8-bit register for signal <rx_data>.
+    Found 4-bit register for signal <rx_sample_cnt>.
+    Found 4-bit register for signal <rx_cnt>.
+    Found 1-bit register for signal <rx_d1>.
+    Found 1-bit register for signal <rx_d2>.
+    Found 1-bit register for signal <rx_busy>.
+    Found 8-bit register for signal <tx_reg>.
+    Found 1-bit register for signal <tx_is_empty>.
+    Found 1-bit register for signal <tx_out>.
+    Found 4-bit register for signal <tx_cnt>.
+    Found 8-bit register for signal <rx_reg>.
+    Found 1-bit register for signal <rx_is_empty>.
+    Found 4-bit adder for signal <rx_sample_cnt[3]_GND_9_o_add_3_OUT> created at line 86.
+    Found 4-bit adder for signal <rx_cnt[3]_GND_9_o_add_6_OUT> created at line 92.
+    Found 4-bit adder for signal <tx_cnt[3]_GND_9_o_add_29_OUT> created at line 142.
+    Found 3-bit subtractor for signal <GND_9_o_GND_9_o_sub_10_OUT<2:0>> created at line 95.
+    Found 3-bit subtractor for signal <GND_9_o_GND_9_o_sub_34_OUT<2:0>> created at line 147.
+    Found 1-bit 8-to-1 multiplexer for signal <GND_9_o_tx_reg[7]_Mux_34_o> created at line 147.
+    Found 4-bit comparator greater for signal <GND_9_o_rx_cnt[3]_LessThan_8_o> created at line 94
+    Found 4-bit comparator greater for signal <rx_cnt[3]_PWR_11_o_LessThan_9_o> created at line 94
+    Found 4-bit comparator greater for signal <GND_9_o_tx_cnt[3]_LessThan_32_o> created at line 146
+    Found 4-bit comparator greater for signal <tx_cnt[3]_PWR_11_o_LessThan_33_o> created at line 146
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  42 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred  15 Multiplexer(s).
+Unit <UartLogic> synthesized.
+
+Synthesizing Unit <DATA_CONSTRUCT>.
+    Related source file is "D:\LEDgrid\DATA_CONSTRUCT.vhd".
+    Found 1-bit register for signal <UARTUPD_out>.
+    Found 1-bit register for signal <ENABLE>.
+    Found 1-bit register for signal <UPDAFOR_out>.
+    Found 1-bit register for signal <RAMCON_out>.
+    Found 32-bit register for signal <STATE>.
+    Found 2-bit register for signal <MODE_out>.
+    Found 8-bit register for signal <UARTDAT_out>.
+    Found 8-bit register for signal <PIXRAM>.
+    Found 16-bit register for signal <PIXRAM_out>.
+    Found 8-bit register for signal <COLOR1>.
+    Found 15-bit register for signal <COLOR_out>.
+    Found 5-bit register for signal <PIXSEL_out>.
+    Found 8-bit register for signal <UARTFOR_out>.
+    Found 32-bit register for signal <COUNT>.
+    Found 32-bit adder for signal <COUNT[31]_GND_12_o_add_4_OUT> created at line 52.
+    Found 32-bit adder for signal <STATE[31]_GND_12_o_add_23_OUT> created at line 104.
+    Found 32-bit adder for signal <STATE[31]_GND_12_o_add_25_OUT> created at line 122.
+    Found 32-bit subtractor for signal <STATE[31]_GND_12_o_sub_25_OUT<31:0>> created at line 107.
+    Found 32-bit comparator greater for signal <GND_12_o_COUNT[31]_LessThan_4_o> created at line 51
+    Found 32-bit comparator greater for signal <n0011> created at line 68
+    Found 32-bit comparator lessequal for signal <n0013> created at line 68
+    Found 32-bit comparator greater for signal <GND_12_o_STATE[31]_LessThan_30_o> created at line 102
+    Found 32-bit comparator greater for signal <STATE[31]_GND_12_o_LessThan_31_o> created at line 102
+    Found 32-bit comparator greater for signal <STATE[31]_GND_12_o_LessThan_33_o> created at line 105
+    Found 32-bit comparator greater for signal <GND_12_o_STATE[31]_LessThan_38_o> created at line 120
+    Found 32-bit comparator greater for signal <STATE[31]_GND_12_o_LessThan_39_o> created at line 120
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 138 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <DATA_CONSTRUCT> synthesized.
+
+Synthesizing Unit <SRAM_Controller>.
+    Related source file is "D:\LEDgrid\SRAM_Controller.vhd".
+    Found 23-bit register for signal <SRAMADDR_out>.
+    Found 1-bit register for signal <READENA>.
+    Found 15-bit register for signal <WRITESTATE[1]_dff_18_OUT>.
+    Found 1-bit register for signal <WRITEENA>.
+    Found 2-bit register for signal <READSTATE>.
+    Found 2-bit register for signal <WRITESTATE>.
+    Found 1-bit register for signal <OE_out>.
+    Found 15-bit register for signal <DATA_out>.
+    Found 1-bit register for signal <WE_out>.
+    Found 1-bit register for signal <WRITESTATE[1]_CLKin_DFF_138>.
+    Found 1-bit register for signal <WRITESTATE[1]_CLKin_DFF_139>.
+    Found 1-bit register for signal <WRITESTATE[1]_CLKin_DFF_140>.
+    Found 1-bit register for signal <WRITESTATE[1]_CLKin_DFF_141>.
+    Found 1-bit register for signal <WRITESTATE[1]_CLKin_DFF_142>.
+    Found 1-bit register for signal <WRITESTATE[1]_CLKin_DFF_143>.
+    Found 1-bit register for signal <WRITESTATE[1]_CLKin_DFF_144>.
+    Found 1-bit register for signal <WRITESTATE[1]_CLKin_DFF_145>.
+    Found 1-bit register for signal <WRITESTATE[1]_CLKin_DFF_146>.
+    Found 1-bit register for signal <WRITESTATE[1]_CLKin_DFF_147>.
+    Found 1-bit register for signal <WRITESTATE[1]_CLKin_DFF_148>.
+    Found 1-bit register for signal <WRITESTATE[1]_CLKin_DFF_149>.
+    Found 1-bit register for signal <WRITESTATE[1]_CLKin_DFF_150>.
+    Found 1-bit register for signal <WRITESTATE[1]_CLKin_DFF_151>.
+    Found 1-bit register for signal <WRITESTATE[1]_CLKin_DFF_152>.
+    Found finite state machine <FSM_1> for signal <READSTATE>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLKin (rising_edge)                            |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_2> for signal <WRITESTATE>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 4                                              |
+    | Clock              | CLKin (rising_edge)                            |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit tristate buffer for signal <SRAMDATA_io<14>> created at line 56
+    Found 1-bit tristate buffer for signal <SRAMDATA_io<13>> created at line 56
+    Found 1-bit tristate buffer for signal <SRAMDATA_io<12>> created at line 56
+    Found 1-bit tristate buffer for signal <SRAMDATA_io<11>> created at line 56
+    Found 1-bit tristate buffer for signal <SRAMDATA_io<10>> created at line 56
+    Found 1-bit tristate buffer for signal <SRAMDATA_io<9>> created at line 56
+    Found 1-bit tristate buffer for signal <SRAMDATA_io<8>> created at line 56
+    Found 1-bit tristate buffer for signal <SRAMDATA_io<7>> created at line 56
+    Found 1-bit tristate buffer for signal <SRAMDATA_io<6>> created at line 56
+    Found 1-bit tristate buffer for signal <SRAMDATA_io<5>> created at line 56
+    Found 1-bit tristate buffer for signal <SRAMDATA_io<4>> created at line 56
+    Found 1-bit tristate buffer for signal <SRAMDATA_io<3>> created at line 56
+    Found 1-bit tristate buffer for signal <SRAMDATA_io<2>> created at line 56
+    Found 1-bit tristate buffer for signal <SRAMDATA_io<1>> created at line 56
+    Found 1-bit tristate buffer for signal <SRAMDATA_io<0>> created at line 56
+    Summary:
+	inferred  72 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+	inferred  15 Tristate(s).
+	inferred   2 Finite State Machine(s).
+Unit <SRAM_Controller> synthesized.
+
+Synthesizing Unit <ASCII_LUT>.
+    Related source file is "D:\LEDgrid\ASCII_LUT.vhd".
+    Found 256x7-bit Read Only RAM for signal <SEL_out>
+    Summary:
+	inferred   1 RAM(s).
+Unit <ASCII_LUT> synthesized.
+
+Synthesizing Unit <mod_6u_3u>.
+    Related source file is "".
+    Found 9-bit adder for signal <GND_46_o_b[2]_add_1_OUT> created at line 0.
+    Found 8-bit adder for signal <GND_46_o_b[2]_add_3_OUT> created at line 0.
+    Found 7-bit adder for signal <GND_46_o_b[2]_add_5_OUT> created at line 0.
+    Found 6-bit adder for signal <a[5]_b[2]_add_7_OUT> created at line 0.
+    Found 6-bit adder for signal <a[5]_GND_46_o_add_9_OUT> created at line 0.
+    Found 6-bit adder for signal <a[5]_GND_46_o_add_11_OUT> created at line 0.
+    Found 6-bit adder for signal <a[5]_GND_46_o_add_13_OUT> created at line 0.
+    Found 9-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 6-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 6-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 6-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 6-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred   7 Comparator(s).
+	inferred  37 Multiplexer(s).
+Unit <mod_6u_3u> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 6
- 32-bit adder                                          : 4
- 32-bit addsub                                         : 1
- 5-bit adder                                           : 1
-# Registers                                            : 19
- 1-bit register                                        : 7
- 24-bit register                                       : 1
- 32-bit register                                       : 6
- 4-bit register                                        : 1
- 5-bit register                                        : 2
- 6-bit register                                        : 2
-# Comparators                                          : 18
- 32-bit comparator greater                             : 7
- 5-bit comparator lessequal                            : 8
- 9-bit comparator lessequal                            : 3
-# Multiplexers                                         : 7
- 1-bit 2-to-1 multiplexer                              : 3
- 24-bit 2-to-1 multiplexer                             : 3
+# RAMs                                                 : 1
+ 256x7-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 76
+ 10-bit adder                                          : 3
+ 23-bit adder                                          : 33
+ 3-bit subtractor                                      : 3
+ 32-bit adder                                          : 16
+ 32-bit subtractor                                     : 1
+ 4-bit adder                                           : 3
+ 5-bit adder                                           : 4
+ 5-bit subtractor                                      : 4
+ 6-bit adder                                           : 4
+ 6-bit subtractor                                      : 2
+ 7-bit adder                                           : 1
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 93
+ 1-bit register                                        : 44
+ 15-bit register                                       : 5
+ 16-bit register                                       : 1
+ 2-bit register                                        : 1
+ 23-bit register                                       : 4
+ 296-bit register                                      : 2
+ 32-bit register                                       : 16
+ 4-bit register                                        : 4
+ 5-bit register                                        : 3
+ 512-bit register                                      : 2
+ 6-bit register                                        : 3
+ 8-bit register                                        : 8
+# Comparators                                          : 45
+ 32-bit comparator greater                             : 15
+ 32-bit comparator lessequal                           : 14
+ 4-bit comparator greater                              : 4
+ 5-bit comparator lessequal                            : 2
+ 6-bit comparator lessequal                            : 7
+ 7-bit comparator lessequal                            : 1
+ 8-bit comparator lessequal                            : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 945
+ 1-bit 2-to-1 multiplexer                              : 876
+ 1-bit 7-to-1 multiplexer                              : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+ 15-bit 2-to-1 multiplexer                             : 41
+ 23-bit 2-to-1 multiplexer                             : 3
+ 3-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 14
+ 4-bit 2-to-1 multiplexer                              : 4
  6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 3
+# Tristates                                            : 15
+ 1-bit tristate buffer                                 : 15
+# FSMs                                                 : 3
 
 =========================================================================
 
@@ -228,47 +591,47 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-INFO:Xst:2261 - The FF/Latch <YCON_out_0> in Unit <VGA> is equivalent to the following FF/Latch, which will be removed : <YSEL_out_0> 
-INFO:Xst:2261 - The FF/Latch <YCON_out_1> in Unit <VGA> is equivalent to the following FF/Latch, which will be removed : <YSEL_out_1> 
-INFO:Xst:2261 - The FF/Latch <YCON_out_2> in Unit <VGA> is equivalent to the following FF/Latch, which will be removed : <YSEL_out_2> 
-INFO:Xst:2261 - The FF/Latch <YCON_out_3> in Unit <VGA> is equivalent to the following FF/Latch, which will be removed : <YSEL_out_3> 
+Reading core <ipcore_dir/CHAR_ROM.ngc>.
+Loading core <CHAR_ROM> for timing and area information for instance <CHARACTERS>.
 INFO:Xst:2261 - The FF/Latch <CLK3> in Unit <VGA> is equivalent to the following FF/Latch, which will be removed : <STEP_out> 
-WARNING:Xst:1293 - FF/Latch <COUNTER2_31> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_30> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_29> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_28> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_27> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_26> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_25> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_24> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_23> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_22> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_21> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_20> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_19> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_18> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_17> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_16> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_15> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_14> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_13> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_12> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_11> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_10> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_9> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_8> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_7> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_6> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_5> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_4> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_3> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_2> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_1> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <WRITESTATE[1]_CLKin_DFF_140> in Unit <IMAGERAM> is equivalent to the following 14 FFs/Latches, which will be removed : <WRITESTATE[1]_CLKin_DFF_138> <WRITESTATE[1]_CLKin_DFF_139> <WRITESTATE[1]_CLKin_DFF_143> <WRITESTATE[1]_CLKin_DFF_141> <WRITESTATE[1]_CLKin_DFF_142> <WRITESTATE[1]_CLKin_DFF_146> <WRITESTATE[1]_CLKin_DFF_144> <WRITESTATE[1]_CLKin_DFF_145> <WRITESTATE[1]_CLKin_DFF_147> <WRITESTATE[1]_CLKin_DFF_148> <WRITESTATE[1]_CLKin_DFF_151> <WRITESTATE[1]_CLKin_DFF_149> <WRITESTATE[1]_CLKin_DFF_150> <WRITESTATE[1]_CLKin_DFF_152> 
+WARNING:Xst:2677 - Node <COLOR1_7> of sequential type is unconnected in block <MAKE_DATA>.
+
+Synthesizing (advanced) Unit <DATA_CONSTRUCT>.
+The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
+Unit <DATA_CONSTRUCT> synthesized (advanced).
 
 Synthesizing (advanced) Unit <ProjectMain>.
-The following registers are absorbed into counter <COUNT2>: 1 register on signal <COUNT2>.
-The following registers are absorbed into counter <NUM2>: 1 register on signal <NUM2>.
+The following registers are absorbed into counter <COUNT3>: 1 register on signal <COUNT3>.
+The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
+The following registers are absorbed into counter <COUNT4>: 1 register on signal <COUNT4>.
+INFO:Xst:3226 - The RAM <CHARSELECT/Mram_SEL_out> will be implemented as a BLOCK RAM, absorbing the following register(s): <ASCII1>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 7-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <CLKin>         | rise     |
+    |     enA            | connected to internal node          | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <HEXVEC[7]_HEXVEC[7]_mux_822_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <COLOR2>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
 Unit <ProjectMain> synthesized (advanced).
+
+Synthesizing (advanced) Unit <UartClkDiv>.
+The following registers are absorbed into counter <count2>: 1 register on signal <count2>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <UartClkDiv> synthesized (advanced).
+
+Synthesizing (advanced) Unit <UartLogic>.
+The following registers are absorbed into counter <tx_cnt>: 1 register on signal <tx_cnt>.
+The following registers are absorbed into counter <rx_sample_cnt>: 1 register on signal <rx_sample_cnt>.
+Unit <UartLogic> synthesized (advanced).
 
 Synthesizing (advanced) Unit <VideoCon>.
 The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
@@ -276,87 +639,721 @@ The following registers are absorbed into counter <COUNTER1>: 1 register on sign
 The following registers are absorbed into counter <VCOUNT>: 1 register on signal <VCOUNT>.
 The following registers are absorbed into counter <COUNTER3>: 1 register on signal <COUNTER3>.
 Unit <VideoCon> synthesized (advanced).
+WARNING:Xst:2677 - Node <COLOR1_7> of sequential type is unconnected in block <DATA_CONSTRUCT>.
+WARNING:Xst:2677 - Node <_i001208_8> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_9> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_10> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_11> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_12> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_13> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_14> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_15> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_16> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_17> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_18> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_19> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_20> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_21> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_22> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_23> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_24> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_25> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_26> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_27> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_28> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_29> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_30> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_31> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_32> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_33> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_34> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_35> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_36> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_37> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_38> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_39> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_40> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_41> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_42> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_43> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_44> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_45> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_46> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_47> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_48> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_49> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_50> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_51> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_52> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_53> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_54> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_55> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_56> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_57> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_58> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_59> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_60> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_61> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_62> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_63> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_64> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_65> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_66> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_67> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_68> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_69> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_70> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_71> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_72> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_73> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_74> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_75> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_76> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_77> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_78> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_79> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_80> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_81> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_82> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_83> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_84> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_85> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_86> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_87> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_88> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_89> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_90> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_91> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_92> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_93> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_94> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_95> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_96> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_97> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_98> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_99> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_100> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_101> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_102> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_103> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_104> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_105> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_106> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_107> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_108> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_109> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_110> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_111> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_112> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_113> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_114> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_115> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_116> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_117> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_118> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_119> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_120> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_121> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_122> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_123> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_124> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_125> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_126> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_127> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_128> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_129> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_130> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_131> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_132> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_133> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_134> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_135> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_136> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_137> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_138> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_139> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_140> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_141> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_142> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_143> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_144> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_145> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_146> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_147> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_148> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_149> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_150> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_151> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_152> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_153> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_154> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_155> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_156> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_157> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_158> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_159> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_160> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_161> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_162> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_163> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_164> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_165> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_166> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_167> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_168> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_169> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_170> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_171> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_172> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_173> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_174> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_175> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_176> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_177> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_178> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_179> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_180> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_181> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_182> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_183> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_184> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_185> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_186> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_187> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_188> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_189> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_190> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_191> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_192> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_193> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_194> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_195> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_196> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_197> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_198> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_199> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_200> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_201> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_202> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_203> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_204> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_205> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_206> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_207> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_208> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_209> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_210> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_211> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_212> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_213> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_214> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_215> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_216> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_217> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_218> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_219> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_220> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_221> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_222> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_223> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_224> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_225> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_226> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_227> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_228> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_229> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_230> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_231> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_232> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_233> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_234> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_235> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_236> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_237> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_238> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_239> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_240> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_241> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_242> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_243> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_244> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_245> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_246> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_247> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_248> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_249> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_250> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_251> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_252> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_253> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_254> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_255> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_256> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_257> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_258> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_259> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_260> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_261> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_262> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_263> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_264> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_265> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_266> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_267> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_268> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_269> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_270> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_271> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_272> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_273> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_274> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_275> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_276> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_277> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_278> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_279> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_280> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_281> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_282> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_283> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_284> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_285> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_286> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_287> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_288> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_289> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_290> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_291> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_292> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_293> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_294> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <_i001208_295> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_8> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_9> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_10> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_11> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_12> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_13> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_14> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_15> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_16> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_17> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_18> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_19> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_20> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_21> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_22> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_23> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_24> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_25> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_26> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_27> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_28> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_29> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_30> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_31> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_32> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_33> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_34> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_35> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_36> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_37> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_38> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_39> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_40> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_41> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_42> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_43> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_44> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_45> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_46> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_47> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_48> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_49> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_50> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_51> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_52> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_53> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_54> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_55> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_56> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_57> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_58> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_59> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_60> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_61> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_62> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_63> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_64> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_65> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_66> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_67> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_68> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_69> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_70> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_71> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_72> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_73> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_74> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_75> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_76> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_77> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_78> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_79> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_80> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_81> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_82> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_83> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_84> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_85> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_86> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_87> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_88> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_89> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_90> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_91> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_92> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_93> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_94> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_95> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_96> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_97> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_98> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_99> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_100> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_101> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_102> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_103> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_104> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_105> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_106> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_107> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_108> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_109> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_110> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_111> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_112> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_113> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_114> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_115> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_116> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_117> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_118> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_119> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_120> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_121> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_122> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_123> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_124> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_125> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_126> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_127> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_128> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_129> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_130> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_131> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_132> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_133> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_134> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_135> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_136> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_137> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_138> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_139> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_140> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_141> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_142> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_143> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_144> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_145> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_146> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_147> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_148> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_149> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_150> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_151> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_152> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_153> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_154> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_155> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_156> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_157> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_158> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_159> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_160> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_161> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_162> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_163> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_164> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_165> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_166> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_167> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_168> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_169> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_170> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_171> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_172> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_173> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_174> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_175> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_176> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_177> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_178> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_179> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_180> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_181> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_182> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_183> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_184> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_185> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_186> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_187> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_188> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_189> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_190> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_191> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_192> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_193> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_194> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_195> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_196> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_197> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_198> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_199> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_200> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_201> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_202> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_203> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_204> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_205> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_206> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_207> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_208> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_209> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_210> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_211> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_212> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_213> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_214> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_215> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_216> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_217> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_218> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_219> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_220> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_221> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_222> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_223> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_224> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_225> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_226> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_227> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_228> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_229> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_230> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_231> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_232> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_233> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_234> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_235> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_236> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_237> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_238> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_239> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_240> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_241> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_242> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_243> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_244> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_245> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_246> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_247> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_248> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_249> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_250> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_251> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_252> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_253> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_254> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_255> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_256> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_257> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_258> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_259> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_260> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_261> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_262> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_263> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_264> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_265> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_266> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_267> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_268> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_269> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_270> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_271> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_272> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_273> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_274> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_275> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_276> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_277> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_278> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_279> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_280> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_281> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_282> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_283> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_284> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_285> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_286> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_287> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_288> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_289> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_290> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_291> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_292> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_293> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_294> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <HEXVEC_295> of sequential type is unconnected in block <ProjectMain>.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Counters                                             : 6
- 32-bit up counter                                     : 4
- 32-bit updown counter                                 : 1
+# RAMs                                                 : 1
+ 256x7-bit single-port block Read Only RAM             : 1
+# Adders/Subtractors                                   : 64
+ 10-bit adder                                          : 4
+ 23-bit adder                                          : 34
+ 3-bit adder                                           : 1
+ 3-bit subtractor                                      : 3
+ 32-bit adder                                          : 5
+ 32-bit subtractor                                     : 1
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 3
+ 5-bit subtractor                                      : 4
+ 6-bit adder                                           : 6
+ 6-bit subtractor                                      : 2
+# Counters                                             : 12
+ 32-bit up counter                                     : 9
+ 4-bit up counter                                      : 2
  5-bit up counter                                      : 1
-# Registers                                            : 84
- Flip-Flops                                            : 84
-# Comparators                                          : 18
- 32-bit comparator greater                             : 7
- 5-bit comparator lessequal                            : 8
- 9-bit comparator lessequal                            : 3
-# Multiplexers                                         : 7
- 1-bit 2-to-1 multiplexer                              : 3
- 24-bit 2-to-1 multiplexer                             : 3
+# Registers                                            : 1584
+ Flip-Flops                                            : 1584
+# Comparators                                          : 45
+ 32-bit comparator greater                             : 15
+ 32-bit comparator lessequal                           : 14
+ 4-bit comparator greater                              : 4
+ 5-bit comparator lessequal                            : 2
+ 6-bit comparator lessequal                            : 7
+ 7-bit comparator lessequal                            : 1
+ 8-bit comparator lessequal                            : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 653
+ 1-bit 2-to-1 multiplexer                              : 588
+ 1-bit 7-to-1 multiplexer                              : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+ 15-bit 2-to-1 multiplexer                             : 41
+ 23-bit 2-to-1 multiplexer                             : 3
+ 3-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 11
+ 4-bit 2-to-1 multiplexer                              : 3
  6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 3
+# FSMs                                                 : 3
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1293 - FF/Latch <COUNTER2_31> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_30> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_29> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_28> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_27> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_26> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_25> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_24> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_23> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_22> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_21> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_20> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_19> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_18> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_17> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_16> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_15> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_14> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_13> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_12> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_11> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_10> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_9> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_8> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_7> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_6> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_5> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_4> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_3> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_2> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <COUNTER2_1> has a constant value of 0 in block <VideoCon>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <YSEL_out_0> in Unit <VideoCon> is equivalent to the following FF/Latch, which will be removed : <YCON_out_0> 
-INFO:Xst:2261 - The FF/Latch <YSEL_out_1> in Unit <VideoCon> is equivalent to the following FF/Latch, which will be removed : <YCON_out_1> 
-INFO:Xst:2261 - The FF/Latch <YSEL_out_2> in Unit <VideoCon> is equivalent to the following FF/Latch, which will be removed : <YCON_out_2> 
-INFO:Xst:2261 - The FF/Latch <YSEL_out_3> in Unit <VideoCon> is equivalent to the following FF/Latch, which will be removed : <YCON_out_3> 
-INFO:Xst:2261 - The FF/Latch <CLK3> in Unit <VideoCon> is equivalent to the following FF/Latch, which will be removed : <STEP_out> 
+INFO:Xst:2261 - The FF/Latch <WRITESTATE[1]_CLKin_DFF_140> in Unit <SRAM_Controller> is equivalent to the following 14 FFs/Latches, which will be removed : <WRITESTATE[1]_CLKin_DFF_138> <WRITESTATE[1]_CLKin_DFF_139> <WRITESTATE[1]_CLKin_DFF_143> <WRITESTATE[1]_CLKin_DFF_141> <WRITESTATE[1]_CLKin_DFF_142> <WRITESTATE[1]_CLKin_DFF_146> <WRITESTATE[1]_CLKin_DFF_144> <WRITESTATE[1]_CLKin_DFF_145> <WRITESTATE[1]_CLKin_DFF_147> <WRITESTATE[1]_CLKin_DFF_148> <WRITESTATE[1]_CLKin_DFF_151> <WRITESTATE[1]_CLKin_DFF_149> <WRITESTATE[1]_CLKin_DFF_150> <WRITESTATE[1]_CLKin_DFF_152> 
+INFO:Xst:2261 - The FF/Latch <VGA/CLK3> in Unit <ProjectMain> is equivalent to the following FF/Latch, which will be removed : <VGA/STEP_out> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <COUNTER2[1:1]> with sequential encoding.
+----------------------------------------------
+ State                            | Encoding
+----------------------------------------------
+ 00000000000000000000000000000000 | 0
+ 00000000000000000000000000000001 | 1
+----------------------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <IMAGERAM/FSM_1> on signal <READSTATE[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+ 11    | 11
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <IMAGERAM/FSM_2> on signal <WRITESTATE[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+WARNING:Xst:1710 - FF/Latch <UARTDAT_out_2> (without init value) has a constant value of 0 in block <DATA_CONSTRUCT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UARTDAT_out_3> (without init value) has a constant value of 0 in block <DATA_CONSTRUCT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UARTDAT_out_4> (without init value) has a constant value of 0 in block <DATA_CONSTRUCT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UARTDAT_out_5> (without init value) has a constant value of 0 in block <DATA_CONSTRUCT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UARTDAT_out_6> (without init value) has a constant value of 1 in block <DATA_CONSTRUCT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UARTDAT_out_7> (without init value) has a constant value of 0 in block <DATA_CONSTRUCT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PIXRAM2_22> (without init value) has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <VGA/XSEL2_out_0> in Unit <ProjectMain> is equivalent to the following FF/Latch, which will be removed : <VGA/XSEL_out_0> 
 
 Optimizing unit <ProjectMain> ...
 
-Optimizing unit <VideoCon> ...
-WARNING:Xst:1293 - FF/Latch <COUNT2_30> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_31> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_31> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_30> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+Optimizing unit <UartLogic> ...
+
+Optimizing unit <UartClkDiv> ...
+
+Optimizing unit <DATA_CONSTRUCT> ...
+WARNING:Xst:1710 - FF/Latch <UART_CON/UART_LOGIC/tx_reg_7> (without init value) has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <UART_CON/UART_LOGIC/tx_reg_6> (without init value) has a constant value of 1 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <UART_CON/UART_LOGIC/tx_reg_5> (without init value) has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <UART_CON/UART_LOGIC/tx_reg_4> (without init value) has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <UART_CON/UART_LOGIC/tx_reg_3> (without init value) has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <UART_CON/UART_LOGIC/tx_reg_2> (without init value) has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <MAKE_DATA/UARTFOR_out_7> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <MAKE_DATA/UARTFOR_out_6> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <MAKE_DATA/UARTFOR_out_5> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <MAKE_DATA/UARTFOR_out_4> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <MAKE_DATA/UARTFOR_out_3> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <MAKE_DATA/UARTFOR_out_2> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <MAKE_DATA/UARTFOR_out_1> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:2677 - Node <MAKE_DATA/UARTFOR_out_0> of sequential type is unconnected in block <ProjectMain>.
+WARNING:Xst:1293 - FF/Latch <VGA/COUNT_28> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_29> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_28> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_27> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_26> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_25> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_24> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_23> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_22> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_21> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_20> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_19> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_18> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_30> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_31> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_31> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_30> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_29> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_28> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_27> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_26> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_25> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_24> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_23> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_22> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_21> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_20> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_19> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_18> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_17> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_16> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_15> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_14> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_13> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_12> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_11> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MAKE_DATA/COUNT_10> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_1> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_2> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_3> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
@@ -374,54 +1371,37 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_14> has a
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_15> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_16> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_17> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <NUM2_23> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <NUM2_24> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <NUM2_25> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <NUM2_26> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <NUM2_27> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <NUM2_28> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <NUM2_29> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <NUM2_30> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <NUM2_31> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_6> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_7> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_8> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_9> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_10> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_11> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_12> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_29> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_28> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_27> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_26> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_25> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_24> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_23> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_22> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_21> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_20> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_19> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_18> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_17> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_16> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_15> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_14> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COUNT2_13> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <COLOR_6> in Unit <ProjectMain> is equivalent to the following 2 FFs/Latches, which will be removed : <COLOR_14> <COLOR_22> 
-INFO:Xst:2261 - The FF/Latch <COLOR_7> in Unit <ProjectMain> is equivalent to the following 2 FFs/Latches, which will be removed : <COLOR_15> <COLOR_23> 
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_18> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_19> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_20> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_21> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_22> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_23> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_24> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_25> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_26> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COUNT_27> has a constant value of 0 in block <ProjectMain>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:3203 - The FF/Latch <VGA/COUNT_0> in Unit <ProjectMain> is the opposite to the following FF/Latch, which will be removed : <UART_CON/UART_CLK_DIV/count_0> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block ProjectMain, actual ratio is 3.
+Found area constraint ratio of 100 (+ 5) on block ProjectMain, actual ratio is 36.
+FlipFlop MAKE_DATA/MODE_out_0 has been replicated 1 time(s)
 
 Final Macro Processing ...
+
+Processing Unit <ProjectMain> :
+	Found 2-bit shift register for signal <UART_CON/UART_LOGIC/rx_d2>.
+Unit <ProjectMain> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 143
- Flip-Flops                                            : 143
+# Registers                                            : 1798
+ Flip-Flops                                            : 1798
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
 
 =========================================================================
 
@@ -444,29 +1424,38 @@ Top Level Output File Name         : ProjectMain.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 523
-#      GND                         : 1
-#      INV                         : 11
-#      LUT1                        : 86
-#      LUT2                        : 79
-#      LUT3                        : 7
-#      LUT4                        : 31
-#      LUT5                        : 50
-#      LUT6                        : 26
-#      MUXCY                       : 136
-#      MUXF7                       : 1
-#      VCC                         : 1
-#      XORCY                       : 94
-# FlipFlops/Latches                : 143
-#      FD                          : 80
-#      FDE                         : 12
-#      FDR                         : 51
-# Clock Buffers                    : 3
-#      BUFG                        : 2
+# BELS                             : 3240
+#      GND                         : 2
+#      INV                         : 69
+#      LUT1                        : 384
+#      LUT2                        : 158
+#      LUT3                        : 125
+#      LUT4                        : 118
+#      LUT5                        : 884
+#      LUT6                        : 452
+#      MUXCY                       : 602
+#      MUXF7                       : 7
+#      VCC                         : 2
+#      XORCY                       : 437
+# FlipFlops/Latches                : 1799
+#      FD                          : 1342
+#      FD_1                        : 64
+#      FDC_1                       : 8
+#      FDE                         : 202
+#      FDP                         : 1
+#      FDR                         : 168
+#      FDRE                        : 14
+# RAMS                             : 2
+#      RAMB8BWER                   : 2
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 8
+#      BUFG                        : 7
 #      BUFGP                       : 1
-# IO Buffers                       : 20
-#      IBUF                        : 8
-#      OBUF                        : 12
+# IO Buffers                       : 66
+#      IBUF                        : 1
+#      IOBUF                       : 15
+#      OBUF                        : 50
 
 Device utilization summary:
 ---------------------------
@@ -475,24 +1464,28 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             137  out of  18224     0%  
- Number of Slice LUTs:                  290  out of   9112     3%  
-    Number used as Logic:               290  out of   9112     3%  
+ Number of Slice Registers:            1793  out of  18224     9%  
+ Number of Slice LUTs:                 2191  out of   9112    24%  
+    Number used as Logic:              2190  out of   9112    24%  
+    Number used as Memory:                1  out of   2176     0%  
+       Number used as SRL:                1
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    295
-   Number with an unused Flip Flop:     158  out of    295    53%  
-   Number with an unused LUT:             5  out of    295     1%  
-   Number of fully used LUT-FF pairs:   132  out of    295    44%  
-   Number of unique control sets:        10
+ Number of LUT Flip Flop pairs used:   2858
+   Number with an unused Flip Flop:    1065  out of   2858    37%  
+   Number with an unused LUT:           667  out of   2858    23%  
+   Number of fully used LUT-FF pairs:  1126  out of   2858    39%  
+   Number of unique control sets:        36
 
 IO Utilization: 
- Number of IOs:                          23
- Number of bonded IOBs:                  21  out of    232     9%  
+ Number of IOs:                          67
+ Number of bonded IOBs:                  67  out of    232    28%  
     IOB Flip Flops/Latches:               6
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                8  out of     16    50%  
 
 ---------------------------
 Partition Resource Summary:
@@ -512,14 +1505,21 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-CLKin                              | BUFGP                  | 52    |
-VGA/CLK                            | NONE(VGA/COLOR_out_5)  | 17    |
-VGA/CLK2                           | BUFG                   | 42    |
-VGA/CLK3                           | BUFG                   | 32    |
------------------------------------+------------------------+-------+
+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                              | Load  |
+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------+-------+
+CLKin                              | BUFGP                                                                                                                              | 891   |
+MAKE_DATA/RAMCON_out               | BUFG                                                                                                                               | 56    |
+MAKE_DATA/UPDAFOR_out              | BUFG                                                                                                                               | 512   |
+UART_CON/UART_LOGIC/rx_is_empty    | BUFG                                                                                                                               | 160   |
+VGA/CLK                            | NONE(VGA/COUNT2)                                                                                                                   | 22    |
+VGA/CLK2                           | BUFG                                                                                                                               | 46    |
+CLK2                               | BUFG                                                                                                                               | 47    |
+VGA/CLK3                           | BUFG                                                                                                                               | 32    |
+UART_CON/UART_CLK_DIV/CLKTXD_out   | NONE(UART_CON/UART_LOGIC/tx_cnt_3)                                                                                                 | 8     |
+UART_CON/UART_CLK_DIV/CLKRXD_out   | BUFG                                                                                                                               | 28    |
+CHARACTERS/N1                      | NONE(CHARACTERS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)| 1     |
+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -530,9 +1530,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 4.062ns (Maximum Frequency: 246.181MHz)
-   Minimum input arrival time before clock: 2.408ns
-   Maximum output required time after clock: 3.762ns
+   Minimum period: 6.814ns (Maximum Frequency: 146.760MHz)
+   Minimum input arrival time before clock: 2.146ns
+   Maximum output required time after clock: 5.144ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -541,31 +1541,54 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLKin'
-  Clock period: 3.844ns (frequency: 260.145MHz)
-  Total number of paths / destination ports: 1341 / 79
+  Clock period: 6.003ns (frequency: 166.592MHz)
+  Total number of paths / destination ports: 15446 / 321
 -------------------------------------------------------------------------
-Delay:               3.844ns (Levels of Logic = 7)
-  Source:            NUM2_7 (FF)
-  Destination:       NUM2_0 (FF)
+Delay:               6.003ns (Levels of Logic = 5)
+  Source:            PIXDISP_181 (FF)
+  Destination:       COLOR_0 (FF)
   Source Clock:      CLKin rising
   Destination Clock: CLKin rising
 
-  Data Path: NUM2_7 to NUM2_0
+  Data Path: PIXDISP_181 to COLOR_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              3   0.447   0.995  NUM2_7 (NUM2_7)
-     LUT5:I0->O            1   0.203   0.000  Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_lut<0> (Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<0> (Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<1> (Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<2> (Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<3> (Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<4> (Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<4>)
-     MUXCY:CI->O          30   0.258   1.263  Mcompar_GND_5_o_NUM2[31]_LessThan_1_o_cy<5> (GND_5_o_NUM2[31]_LessThan_1_o_inv)
-     FDR:R                     0.430          NUM2_0
+     FD:C->Q               3   0.447   1.015  PIXDISP_181 (PIXDISP_181)
+     LUT6:I0->O            1   0.203   0.684  Mmux_COLOR[14]_CSEL[14]_mux_1204_OUT1818 (Mmux_COLOR[14]_CSEL[14]_mux_1204_OUT1818)
+     LUT6:I4->O            1   0.203   0.827  Mmux_COLOR[14]_CSEL[14]_mux_1204_OUT1819 (Mmux_COLOR[14]_CSEL[14]_mux_1204_OUT1819)
+     LUT6:I2->O            1   0.203   0.827  Mmux_COLOR[14]_CSEL[14]_mux_1204_OUT1826 (Mmux_COLOR[14]_CSEL[14]_mux_1204_OUT1826)
+     LUT6:I2->O           15   0.203   1.086  Mmux_COLOR[14]_CSEL[14]_mux_1204_OUT1853 (Mmux_COLOR[14]_CSEL[14]_mux_1204_OUT1853)
+     LUT6:I4->O            1   0.203   0.000  Mmux_COLOR[14]_CSEL[14]_mux_1204_OUT17 (COLOR[14]_CSEL[14]_mux_1204_OUT<0>)
+     FDE:D                     0.102          COLOR_0
     ----------------------------------------
-    Total                      3.844ns (1.586ns logic, 2.258ns route)
-                                       (41.3% logic, 58.7% route)
+    Total                      6.003ns (1.564ns logic, 4.439ns route)
+                                       (26.1% logic, 73.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UART_CON/UART_LOGIC/rx_is_empty'
+  Clock period: 6.814ns (frequency: 146.760MHz)
+  Total number of paths / destination ports: 16495 / 201
+-------------------------------------------------------------------------
+Delay:               6.814ns (Levels of Logic = 4)
+  Source:            MAKE_DATA/STATE_14 (FF)
+  Destination:       MAKE_DATA/COLOR_out_14 (FF)
+  Source Clock:      UART_CON/UART_LOGIC/rx_is_empty rising
+  Destination Clock: UART_CON/UART_LOGIC/rx_is_empty rising
+
+  Data Path: MAKE_DATA/STATE_14 to MAKE_DATA/COLOR_out_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              15   0.447   1.346  MAKE_DATA/STATE_14 (MAKE_DATA/STATE_14)
+     LUT6:I0->O            1   0.203   0.827  MAKE_DATA/GND_12_o_GND_12_o_OR_43_o11 (MAKE_DATA/GND_12_o_GND_12_o_OR_43_o11)
+     LUT6:I2->O            4   0.203   0.684  MAKE_DATA/GND_12_o_GND_12_o_OR_43_o15 (MAKE_DATA/GND_12_o_GND_12_o_OR_43_o1)
+     LUT3:I2->O           39   0.205   1.392  MAKE_DATA/_n015011 (MAKE_DATA/_n01501)
+     LUT6:I5->O           15   0.205   0.981  MAKE_DATA/_n01502 (MAKE_DATA/_n0150)
+     FDE:CE                    0.322          MAKE_DATA/COLOR_out_0
+    ----------------------------------------
+    Total                      6.814ns (1.585ns logic, 5.229ns route)
+                                       (23.3% logic, 76.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'VGA/CLK'
@@ -591,82 +1614,191 @@ Delay:               1.950ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'VGA/CLK2'
-  Clock period: 4.062ns (frequency: 246.181MHz)
-  Total number of paths / destination ports: 3399 / 42
+  Clock period: 5.041ns (frequency: 198.367MHz)
+  Total number of paths / destination ports: 3954 / 87
 -------------------------------------------------------------------------
-Delay:               4.062ns (Levels of Logic = 9)
-  Source:            VGA/COUNTER1_2 (FF)
-  Destination:       VGA/VCOUNT_1 (FF)
+Delay:               5.041ns (Levels of Logic = 4)
+  Source:            VGA/COUNTER1_26 (FF)
+  Destination:       VGA/VCOUNT_2 (FF)
   Source Clock:      VGA/CLK2 rising
   Destination Clock: VGA/CLK2 rising
 
-  Data Path: VGA/COUNTER1_2 to VGA/VCOUNT_1
+  Data Path: VGA/COUNTER1_26 to VGA/VCOUNT_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               6   0.447   1.089  VGA/COUNTER1_2 (VGA/COUNTER1_2)
-     LUT5:I0->O            1   0.203   0.000  VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_lut<0> (VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<0> (VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<1> (VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<2> (VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<3> (VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<4> (VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<5> (VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<5>)
-     MUXCY:CI->O          42   0.213   1.538  VGA/Mcompar_GND_6_o_COUNTER1[31]_LessThan_20_o_cy<6> (VGA/GND_6_o_COUNTER1[31]_LessThan_20_o_inv)
-     LUT5:I3->O            1   0.203   0.000  VGA/YSEL_out_4_rstpot (VGA/YSEL_out_4_rstpot)
-     FD:D                      0.102          VGA/YSEL_out_4
+     FDR:C->Q              7   0.447   1.138  VGA/COUNTER1_26 (VGA/COUNTER1_26)
+     LUT6:I0->O            2   0.203   0.961  VGA/GND_6_o_COUNTER1[31]_equal_15_o<31>12 (VGA/GND_6_o_COUNTER1[31]_equal_15_o<31>12)
+     LUT6:I1->O            5   0.203   0.962  VGA/GND_6_o_COUNTER1[31]_equal_15_o<31>16 (VGA/GND_6_o_COUNTER1[31]_equal_15_o<31>1)
+     LUT6:I2->O            2   0.203   0.617  VGA/_n01591 (VGA/_n0159)
+     LUT5:I4->O            1   0.205   0.000  VGA/VCOUNT_2_rstpot (VGA/VCOUNT_2_rstpot)
+     FD:D                      0.102          VGA/VCOUNT_2
     ----------------------------------------
-    Total                      4.062ns (1.435ns logic, 2.627ns route)
-                                       (35.3% logic, 64.7% route)
+    Total                      5.041ns (1.363ns logic, 3.678ns route)
+                                       (27.0% logic, 73.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK2'
+  Clock period: 5.819ns (frequency: 171.857MHz)
+  Total number of paths / destination ports: 10315 / 79
+-------------------------------------------------------------------------
+Delay:               5.819ns (Levels of Logic = 9)
+  Source:            COUNT4_11 (FF)
+  Destination:       CSEL_14 (FF)
+  Source Clock:      CLK2 rising
+  Destination Clock: CLK2 rising
+
+  Data Path: COUNT4_11 to CSEL_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             20   0.447   1.437  COUNT4_11 (COUNT4_11)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_GND_5_o_COUNT4[31]_LessThan_8_o_lut<1> (Mcompar_GND_5_o_COUNT4[31]_LessThan_8_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_GND_5_o_COUNT4[31]_LessThan_8_o_cy<1> (Mcompar_GND_5_o_COUNT4[31]_LessThan_8_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_5_o_COUNT4[31]_LessThan_8_o_cy<2> (Mcompar_GND_5_o_COUNT4[31]_LessThan_8_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_5_o_COUNT4[31]_LessThan_8_o_cy<3> (Mcompar_GND_5_o_COUNT4[31]_LessThan_8_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_5_o_COUNT4[31]_LessThan_8_o_cy<4> (Mcompar_GND_5_o_COUNT4[31]_LessThan_8_o_cy<4>)
+     MUXCY:CI->O          10   0.213   0.961  Mcompar_GND_5_o_COUNT4[31]_LessThan_8_o_cy<5> (GND_5_o_COUNT4[31]_LessThan_8_o)
+     LUT2:I0->O            9   0.203   0.934  COUNT4[31]_GND_5_o_AND_47_o1 (COUNT4[31]_GND_5_o_AND_47_o)
+     LUT6:I4->O            1   0.203   0.684  Mmux_CSEL[14]_CSEL[14]_mux_24_OUT111 (Mmux_CSEL[14]_CSEL[14]_mux_24_OUT11)
+     LUT6:I4->O            1   0.203   0.000  Mmux_CSEL[14]_CSEL[14]_mux_24_OUT114 (CSEL[14]_CSEL[14]_mux_24_OUT<14>)
+     FD:D                      0.102          CSEL_14
+    ----------------------------------------
+    Total                      5.819ns (1.803ns logic, 4.016ns route)
+                                       (31.0% logic, 69.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'VGA/CLK3'
-  Clock period: 3.884ns (frequency: 257.471MHz)
-  Total number of paths / destination ports: 2224 / 32
+  Clock period: 4.593ns (frequency: 217.709MHz)
+  Total number of paths / destination ports: 2160 / 64
 -------------------------------------------------------------------------
-Delay:               3.884ns (Levels of Logic = 8)
+Delay:               4.593ns (Levels of Logic = 7)
   Source:            VGA/COUNTER3_6 (FF)
-  Destination:       VGA/COUNTER3_31 (FF)
+  Destination:       VGA/COUNTER3_0 (FF)
   Source Clock:      VGA/CLK3 rising
   Destination Clock: VGA/CLK3 rising
 
-  Data Path: VGA/COUNTER3_6 to VGA/COUNTER3_31
+  Data Path: VGA/COUNTER3_6 to VGA/COUNTER3_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               9   0.447   1.174  VGA/COUNTER3_6 (VGA/COUNTER3_6)
-     LUT5:I0->O            1   0.203   0.000  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_lut<0> (VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<0> (VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<1> (VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<2> (VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<3> (VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<4> (VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<4>)
-     MUXCY:CI->O          32   0.213   1.292  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_38_o_cy<5> (VGA/GND_6_o_COUNTER3[31]_LessThan_38_o_inv)
-     LUT2:I1->O            1   0.205   0.000  VGA/COUNTER3_31_rstpot (VGA/COUNTER3_31_rstpot)
-     FD:D                      0.102          VGA/COUNTER3_31
+     FDR:C->Q              3   0.447   0.995  VGA/COUNTER3_6 (VGA/COUNTER3_6)
+     LUT5:I0->O            1   0.203   0.000  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_43_o_lut<0> (VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_43_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_43_o_cy<0> (VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_43_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_43_o_cy<1> (VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_43_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_43_o_cy<2> (VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_43_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_43_o_cy<3> (VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_43_o_cy<3>)
+     MUXCY:CI->O           1   0.213   0.580  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_43_o_cy<4> (VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_43_o_cy<4>)
+     LUT3:I2->O           32   0.205   1.291  VGA/Mcompar_GND_6_o_COUNTER3[31]_LessThan_43_o_cy<5> (VGA/GND_6_o_COUNTER3[31]_LessThan_43_o_inv)
+     FDR:R                     0.430          VGA/COUNTER3_0
     ----------------------------------------
-    Total                      3.884ns (1.418ns logic, 2.466ns route)
-                                       (36.5% logic, 63.5% route)
+    Total                      4.593ns (1.727ns logic, 2.866ns route)
+                                       (37.6% logic, 62.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UART_CON/UART_CLK_DIV/CLKTXD_out'
+  Clock period: 2.917ns (frequency: 342.877MHz)
+  Total number of paths / destination ports: 64 / 16
+-------------------------------------------------------------------------
+Delay:               2.917ns (Levels of Logic = 3)
+  Source:            UART_CON/UART_LOGIC/tx_is_empty (FF)
+  Destination:       UART_CON/UART_LOGIC/tx_out (FF)
+  Source Clock:      UART_CON/UART_CLK_DIV/CLKTXD_out rising
+  Destination Clock: UART_CON/UART_CLK_DIV/CLKTXD_out rising
+
+  Data Path: UART_CON/UART_LOGIC/tx_is_empty to UART_CON/UART_LOGIC/tx_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.447   1.138  UART_CON/UART_LOGIC/tx_is_empty (UART_CON/UART_LOGIC/tx_is_empty)
+     LUT6:I0->O            1   0.203   0.000  UART_CON/UART_LOGIC/tx_out_glue_ce_G (N266)
+     MUXF7:I1->O           1   0.140   0.684  UART_CON/UART_LOGIC/tx_out_glue_ce (UART_CON/UART_LOGIC/tx_out_glue_ce)
+     LUT3:I1->O            1   0.203   0.000  UART_CON/UART_LOGIC/tx_out_rstpot (UART_CON/UART_LOGIC/tx_out_rstpot)
+     FD:D                      0.102          UART_CON/UART_LOGIC/tx_out
+    ----------------------------------------
+    Total                      2.917ns (1.095ns logic, 1.822ns route)
+                                       (37.5% logic, 62.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UART_CON/UART_CLK_DIV/CLKRXD_out'
+  Clock period: 4.151ns (frequency: 240.926MHz)
+  Total number of paths / destination ports: 262 / 43
+-------------------------------------------------------------------------
+Delay:               4.151ns (Levels of Logic = 2)
+  Source:            UART_CON/UART_LOGIC/rx_sample_cnt_3 (FF)
+  Destination:       UART_CON/UART_LOGIC/rx_reg_7 (FF)
+  Source Clock:      UART_CON/UART_CLK_DIV/CLKRXD_out rising
+  Destination Clock: UART_CON/UART_CLK_DIV/CLKRXD_out rising
+
+  Data Path: UART_CON/UART_LOGIC/rx_sample_cnt_3 to UART_CON/UART_LOGIC/rx_reg_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.447   1.028  UART_CON/UART_LOGIC/rx_sample_cnt_3 (UART_CON/UART_LOGIC/rx_sample_cnt_3)
+     LUT5:I0->O            8   0.203   1.147  UART_CON/UART_LOGIC/Mcount_rx_sample_cnt_xor<3>111 (UART_CON/UART_LOGIC/Mcount_rx_sample_cnt_xor<3>11)
+     LUT5:I0->O            8   0.203   0.802  UART_CON/UART_LOGIC/_n0208_inv1 (UART_CON/UART_LOGIC/_n0208_inv)
+     FDE:CE                    0.322          UART_CON/UART_LOGIC/rx_reg_0
+    ----------------------------------------
+    Total                      4.151ns (1.175ns logic, 2.976ns route)
+                                       (28.3% logic, 71.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLKin'
-  Total number of paths / destination ports: 20 / 20
+  Total number of paths / destination ports: 30 / 30
 -------------------------------------------------------------------------
-Offset:              2.408ns (Levels of Logic = 2)
-  Source:            SWin<0> (PAD)
-  Destination:       COLOR_0 (FF)
+Offset:              2.146ns (Levels of Logic = 2)
+  Source:            SRAMDATA_io<14> (PAD)
+  Destination:       IMAGERAM/SRAMDATA_io_14 (FF)
   Destination Clock: CLKin rising
 
-  Data Path: SWin<0> to COLOR_0
+  Data Path: SRAMDATA_io<14> to IMAGERAM/SRAMDATA_io_14
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   1.222   0.879  SWin_0_IBUF (SWin_0_IBUF)
-     LUT4:I1->O            1   0.205   0.000  Mmux_GND_5_o_SWin[7]_mux_23_OUT11 (GND_5_o_SWin[7]_mux_23_OUT<0>)
-     FDR:D                     0.102          COLOR_0
+     IOBUF:IO->O           2   1.222   0.617  SRAMDATA_io_14_IOBUF (N134)
+     LUT4:I3->O            1   0.205   0.000  IMAGERAM/Mmux_n012661 (IMAGERAM/n0126<14>)
+     FD:D                      0.102          IMAGERAM/SRAMDATA_io_14
     ----------------------------------------
-    Total                      2.408ns (1.529ns logic, 0.879ns route)
-                                       (63.5% logic, 36.5% route)
+    Total                      2.146ns (1.529ns logic, 0.617ns route)
+                                       (71.2% logic, 28.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UART_CON/UART_CLK_DIV/CLKRXD_out'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.801ns (Levels of Logic = 1)
+  Source:            RXDin (PAD)
+  Destination:       UART_CON/UART_LOGIC/Mshreg_rx_d2 (FF)
+  Destination Clock: UART_CON/UART_CLK_DIV/CLKRXD_out rising
+
+  Data Path: RXDin to UART_CON/UART_LOGIC/Mshreg_rx_d2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  RXDin_IBUF (RXDin_IBUF)
+     SRLC16E:D                -0.060          UART_CON/UART_LOGIC/Mshreg_rx_d2
+    ----------------------------------------
+    Total                      1.801ns (1.222ns logic, 0.579ns route)
+                                       (67.9% logic, 32.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'UART_CON/UART_LOGIC/rx_is_empty'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.144ns (Levels of Logic = 1)
+  Source:            MAKE_DATA/MODE_out_0 (FF)
+  Destination:       LED_out<0> (PAD)
+  Source Clock:      UART_CON/UART_LOGIC/rx_is_empty rising
+
+  Data Path: MAKE_DATA/MODE_out_0 to LED_out<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q             662   0.447   2.126  MAKE_DATA/MODE_out_0 (MAKE_DATA/MODE_out_0)
+     OBUF:I->O                 2.571          LED_out_0_OBUF (LED_out<0>)
+    ----------------------------------------
+    Total                      5.144ns (3.018ns logic, 2.126ns route)
+                                       (58.7% logic, 41.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'VGA/CLK'
@@ -691,45 +1823,142 @@ Offset:              3.597ns (Levels of Logic = 1)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'VGA/CLK2'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Offset:              3.762ns (Levels of Logic = 1)
-  Source:            VGA/YSEL_out_3 (FF)
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            VGA/YCON_out_3 (FF)
   Destination:       YCONTROL_out<3> (PAD)
   Source Clock:      VGA/CLK2 rising
 
-  Data Path: VGA/YSEL_out_3 to YCONTROL_out<3>
+  Data Path: VGA/YCON_out_3 to YCONTROL_out<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               6   0.447   0.744  VGA/YSEL_out_3 (VGA/YSEL_out_3)
+     FDE:C->Q              1   0.447   0.579  VGA/YCON_out_3 (VGA/YCON_out_3)
      OBUF:I->O                 2.571          YCONTROL_out_3_OBUF (YCONTROL_out<3>)
     ----------------------------------------
-    Total                      3.762ns (3.018ns logic, 0.744ns route)
-                                       (80.2% logic, 19.8% route)
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLKin'
+  Total number of paths / destination ports: 55 / 40
+-------------------------------------------------------------------------
+Offset:              4.821ns (Levels of Logic = 2)
+  Source:            IMAGERAM/WRITESTATE[1]_CLKin_DFF_140 (FF)
+  Destination:       SRAMDATA_io<14> (PAD)
+  Source Clock:      CLKin rising
+
+  Data Path: IMAGERAM/WRITESTATE[1]_CLKin_DFF_140 to SRAMDATA_io<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  IMAGERAM/WRITESTATE[1]_CLKin_DFF_140 (IMAGERAM/WRITESTATE[1]_CLKin_DFF_140)
+     INV:I->O             15   0.206   0.981  IMAGERAM/WRITESTATE[1]_CLKin_DFF_138_inv1_INV_0 (IMAGERAM/WRITESTATE[1]_CLKin_DFF_138_inv)
+     IOBUF:T->IO               2.571          SRAMDATA_io_14_IOBUF (SRAMDATA_io<14>)
+    ----------------------------------------
+    Total                      4.821ns (3.224ns logic, 1.597ns route)
+                                       (66.9% logic, 33.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'UART_CON/UART_CLK_DIV/CLKTXD_out'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.668ns (Levels of Logic = 1)
+  Source:            UART_CON/UART_LOGIC/tx_out (FF)
+  Destination:       TXD_out (PAD)
+  Source Clock:      UART_CON/UART_CLK_DIV/CLKTXD_out rising
+
+  Data Path: UART_CON/UART_LOGIC/tx_out to TXD_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.650  UART_CON/UART_LOGIC/tx_out (UART_CON/UART_LOGIC/tx_out)
+     OBUF:I->O                 2.571          TXD_out_OBUF (TXD_out)
+    ----------------------------------------
+    Total                      3.668ns (3.018ns logic, 0.650ns route)
+                                       (82.3% logic, 17.7% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock CLKin
+Clock to Setup on destination clock CLK2
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLKin          |    3.844|         |         |         |
-VGA/CLK        |    4.797|         |         |         |
-VGA/CLK2       |    3.164|         |         |         |
+CLK2           |    5.819|         |         |         |
 ---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CLKin
+-------------------------------+---------+---------+---------+---------+
+                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------+---------+---------+---------+---------+
+CLK2                           |    1.946|         |         |         |
+CLKin                          |    6.003|         |         |         |
+MAKE_DATA/RAMCON_out           |    1.128|         |         |         |
+MAKE_DATA/UPDAFOR_out          |    1.128|         |         |         |
+UART_CON/UART_LOGIC/rx_is_empty|    7.881|    1.128|         |         |
+VGA/CLK                        |    7.148|         |         |         |
+VGA/CLK2                       |    6.708|         |         |         |
+-------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock MAKE_DATA/RAMCON_out
+-------------------------------+---------+---------+---------+---------+
+                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------+---------+---------+---------+---------+
+CLKin                          |    4.657|         |         |         |
+UART_CON/UART_LOGIC/rx_is_empty|    4.838|         |         |         |
+-------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock MAKE_DATA/UPDAFOR_out
+-------------------------------+---------+---------+---------+---------+
+                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------+---------+---------+---------+---------+
+CLKin                          |    1.747|         |         |         |
+UART_CON/UART_LOGIC/rx_is_empty|    3.826|         |         |         |
+-------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UART_CON/UART_CLK_DIV/CLKRXD_out
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+UART_CON/UART_CLK_DIV/CLKRXD_out|    4.151|         |         |         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UART_CON/UART_CLK_DIV/CLKTXD_out
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+CLKin                           |    2.310|         |         |         |
+UART_CON/UART_CLK_DIV/CLKTXD_out|    2.917|         |         |         |
+UART_CON/UART_LOGIC/rx_is_empty |    1.199|         |         |         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UART_CON/UART_LOGIC/rx_is_empty
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+CLKin                           |         |         |    4.877|         |
+UART_CON/UART_CLK_DIV/CLKRXD_out|    5.924|         |    2.078|         |
+UART_CON/UART_LOGIC/rx_is_empty |    6.814|         |    2.979|         |
+--------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock VGA/CLK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLKin          |    5.527|         |         |         |
+CLKin          |    3.754|         |         |         |
 VGA/CLK        |    1.950|         |         |         |
-VGA/CLK2       |    7.727|         |         |         |
-VGA/CLK3       |    5.574|         |         |         |
+VGA/CLK2       |    7.626|         |         |         |
+VGA/CLK3       |    3.800|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock VGA/CLK2
@@ -737,7 +1966,7 @@ Clock to Setup on destination clock VGA/CLK2
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-VGA/CLK2       |    4.062|         |         |         |
+VGA/CLK2       |    5.041|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock VGA/CLK3
@@ -745,20 +1974,20 @@ Clock to Setup on destination clock VGA/CLK3
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-VGA/CLK3       |    3.884|         |         |         |
+VGA/CLK3       |    4.593|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.83 secs
+Total REAL time to Xst completion: 59.00 secs
+Total CPU time to Xst completion: 58.95 secs
  
 --> 
 
-Total memory usage is 233496 kilobytes
+Total memory usage is 323104 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  140 (   0 filtered)
-Number of infos    :   13 (   0 filtered)
+Number of warnings :  671 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
 

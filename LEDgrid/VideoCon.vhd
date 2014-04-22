@@ -7,12 +7,13 @@ entity VideoCon is
   port ( CLKin			: in std_logic;
          REFRESH_out	: out std_logic;
 			STEP_out		: out std_logic;
-			COLORin		: in std_logic_vector(23 downto 0);
+			COLORin		: in std_logic_vector(14 downto 0);
 			COLOR_out   : out std_logic_vector(5 downto 0); 
 --			READRAM_out	: out std_logic;
 --			WRITERAM_out: out std_logic;
 			YCON_out		: out std_logic_vector(3 downto 0);
 			XSEL_out		: out std_logic_vector(5 downto 0);
+			XSEL2_out	: out std_logic_vector(5 downto 0);
 			YSEL_out		: out std_logic_vector(4 downto 0));
 end VideoCon;
 
@@ -22,7 +23,7 @@ architecture Behavioral of VideoCon is
   signal CLK 	: std_logic	:=	'0';
   signal CLK3 	: std_logic	:=	'0';
   signal TAK	: std_logic	:=	'0';
-  signal COLOR : std_logic_vector(23 downto 0);
+  signal COLOR : std_logic_vector(14 downto 0);
   
   signal COUNT      : integer:= 0;
   signal COUNT2      : integer:= 0;
@@ -64,7 +65,8 @@ VHSHIFTER : process (CLKin)
 				COUNT2 <= 1;
 			end if;
 			if COUNTER1 < 64 then --SET COLOR AND DEFINE X AXIS SELECT
-				XSEL_out(5 downto 0) <= conv_std_logic_vector(COUNTER1,6);
+				XSEL_out(5 downto 0) <= 63 - conv_std_logic_vector(COUNTER1,6);
+				XSEL2_out(5 downto 0) <= 61 - conv_std_logic_vector(COUNTER1,6);
 				if VCOUNT <= 15 then
 					COLOR_out(0) <= COLOR(0);
 					COLOR_out(1) <= '0';
@@ -110,7 +112,7 @@ VHSHIFTER : process (CLKin)
 					end if;
 				if COUNTER1 = 129 then --RENEW THE Y CONTROL AND AXIS OUTPUT VALUES
 					YCON_out(3 downto 0) <= VCOUNT(3 downto 0);
-					YSEL_out(4 downto 0) <= VCOUNT;
+					YSEL_out(4 downto 0) <= 31 - VCOUNT;
 				end if;			
 			else
 				COUNTER1 <= 0;
@@ -126,8 +128,8 @@ if rising_edge(CLK3) then
 	end if;
 end if;
 ------------------------------------------------- RED
-if COUNTER3 <= COLORin(7 downto 0) then
-	if COLORin(7 downto 0) = 0 then
+if COUNTER3 <= COLORin(14 downto 10) then
+	if COLORin(14 downto 10) = 0 then
 		COLOR(0) <= '0';
 	else
 		COLOR(0) <= '1';
@@ -136,8 +138,8 @@ else
 	COLOR(0) <= '0';
 end if;	
 ------------------------------------------------- GREEN
-if COUNTER3 <= COLORin(15 downto 8) then
-	if COLORin(15 downto 8) = 0 then
+if COUNTER3 <= COLORin(9 downto 5) then
+	if COLORin(9 downto 5) = 0 then
 		COLOR(1) <= '0';
 	else
 		COLOR(1) <= '1';
@@ -146,8 +148,8 @@ else
 	COLOR(1) <= '0';
 end if;
 ------------------------------------------------- BLUE
-if COUNTER3 <= COLORin(23 downto 16) then
-	if COLORin(23 downto 16) = 0 then
+if COUNTER3 <= COLORin(4 downto 0) then
+	if COLORin(4 downto 0) = 0 then
 		COLOR(2) <= '0';
 	else
 		COLOR(2) <= '1';

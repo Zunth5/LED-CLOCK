@@ -1,4 +1,4 @@
-Release 14.4 Map P.49d (nt64)
+Release 14.7 Map P.20131013 (nt64)
 Xilinx Mapping Report File for Design 'ProjectMain'
 
 Design Information
@@ -11,40 +11,46 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Tue Mar 04 17:26:36 2014
+Mapped Date    : Sun Apr 06 21:42:28 2014
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    0
+Number of warnings:    3
 Slice Logic Utilization:
-  Number of Slice Registers:                   137 out of  18,224    1%
-    Number used as Flip Flops:                 137
+  Number of Slice Registers:                 1,793 out of  18,224    9%
+    Number used as Flip Flops:               1,793
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        271 out of   9,112    2%
-    Number used as logic:                      268 out of   9,112    2%
-      Number using O6 output only:             140
-      Number using O5 output only:              83
-      Number using O5 and O6:                   45
+  Number of Slice LUTs:                      1,952 out of   9,112   21%
+    Number used as logic:                    1,919 out of   9,112   21%
+      Number using O6 output only:           1,197
+      Number using O5 output only:             370
+      Number using O5 and O6:                  352
       Number used as ROM:                        0
-    Number used as Memory:                       0 out of   2,176    0%
-    Number used exclusively as route-thrus:      3
-      Number with same-slice register load:      0
-      Number with same-slice carry load:         3
+    Number used as Memory:                       1 out of   2,176    1%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:             1
+        Number using O6 output only:             1
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+    Number used exclusively as route-thrus:     32
+      Number with same-slice register load:     18
+      Number with same-slice carry load:        14
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    89 out of   2,278    3%
-  Number of MUXCYs used:                       156 out of   4,556    3%
-  Number of LUT Flip Flop pairs used:          277
-    Number with an unused Flip Flop:           149 out of     277   53%
-    Number with an unused LUT:                   6 out of     277    2%
-    Number of fully used LUT-FF pairs:         122 out of     277   44%
-    Number of unique control sets:               9
+  Number of occupied Slices:                   725 out of   2,278   31%
+  Number of MUXCYs used:                       672 out of   4,556   14%
+  Number of LUT Flip Flop pairs used:        2,438
+    Number with an unused Flip Flop:           757 out of   2,438   31%
+    Number with an unused LUT:                 486 out of   2,438   19%
+    Number of fully used LUT-FF pairs:       1,195 out of   2,438   49%
+    Number of unique control sets:              35
     Number of slice register sites lost
-      to control set restrictions:              31 out of  18,224    1%
+      to control set restrictions:             102 out of  18,224    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -53,17 +59,17 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        23 out of     232    9%
-    Number of LOCed IOBs:                       23 out of      23  100%
+  Number of bonded IOBs:                        67 out of     232   28%
+    Number of LOCed IOBs:                       66 out of      67   98%
     IOB Flip Flops:                              6
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
-  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of RAMB8BWERs:                          2 out of      64    3%
   Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
-  Number of BUFG/BUFGMUXs:                       3 out of      16   18%
-    Number used as BUFGs:                        3
+  Number of BUFG/BUFGMUXs:                       8 out of      16   50%
+    Number used as BUFGs:                        8
     Number used as BUFGMUX:                      0
   Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
   Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
@@ -84,11 +90,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                2.62
+Average Fanout of Non-Clock Nets:                3.30
 
-Peak Memory Usage:  360 MB
-Total REAL time to MAP completion:  13 secs 
-Total CPU time to MAP completion:   12 secs 
+Peak Memory Usage:  437 MB
+Total REAL time to MAP completion:  32 secs 
+Total CPU time to MAP completion:   31 secs 
 
 Table of Contents
 -----------------
@@ -111,14 +117,20 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   UART_CON/UART_CLK_DIV/CLKTXD_out is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net VGA/CLK is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network BTNin_IBUF has no load.
-INFO:LIT:395 - The above info message is repeated 1 more times for the following
-   (max. 5 shown):
-   BTN2in_IBUF
-   To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs
@@ -129,17 +141,22 @@ INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
    1.260 Volts)
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
+INFO:Place:834 - Only a subset of IOs are locked. Out of 67 IOs, 66 are locked
+   and 1 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
 INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-   2 block(s) optimized away
+   4 block(s) optimized away
 
 Section 5 - Removed Logic
 -------------------------
 
 Optimized Block(s):
 TYPE 		BLOCK
+GND 		CHARACTERS/XST_GND
+VCC 		CHARACTERS/XST_VCC
 GND 		XST_GND
 VCC 		XST_VCC
 
@@ -153,8 +170,8 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
-| BTN2in                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| BTNin                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| CE1_out                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| CE2_out                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | CLKin                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | COLOR_out<0>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
 | COLOR_out<1>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
@@ -162,16 +179,60 @@ Section 6 - IOB Properties
 | COLOR_out<3>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
 | COLOR_out<4>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
 | COLOR_out<5>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| LB1_out                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED_out<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED_out<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED_out<2>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED_out<3>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED_out<4>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED_out<5>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED_out<6>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED_out<7>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| OE_out                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | REFRESH_out                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| RXDin                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SRAMADDR_out<0>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<1>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<2>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<3>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<4>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<5>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<6>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<7>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<8>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<9>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<10>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<11>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<12>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<13>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<14>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<15>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<16>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<17>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<18>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<19>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<20>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<21>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMADDR_out<22>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMDATA_io<0>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMDATA_io<1>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMDATA_io<2>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMDATA_io<3>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMDATA_io<4>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMDATA_io<5>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMDATA_io<6>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMDATA_io<7>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMDATA_io<8>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMDATA_io<9>                     | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMDATA_io<10>                    | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMDATA_io<11>                    | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMDATA_io<12>                    | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMDATA_io<13>                    | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SRAMDATA_io<14>                    | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | STEP_out                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| SWin<0>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| SWin<1>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| SWin<2>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| SWin<3>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| SWin<4>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| SWin<5>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| SWin<6>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| SWin<7>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| TXD_out                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| UB1_out                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| WE_out                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | YCONTROL_out<0>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | YCONTROL_out<1>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | YCONTROL_out<2>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |

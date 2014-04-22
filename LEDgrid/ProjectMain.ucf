@@ -1,16 +1,25 @@
 NET "CLKin" LOC = V10;
 
-NET "SWin[0]"  LOC = T10;
-NET "SWin[1]"  LOC = T9;
-NET "SWin[2]"  LOC = V9;
-NET "SWin[3]"  LOC = M8;
-NET "SWin[4]"  LOC = N8;
-NET "SWin[5]"  LOC = U8;
-NET "SWin[6]"  LOC = V8;
-NET "SWin[7]"  LOC = T5;
+NET "LED_out[7]" LOC = T11;
+NET "LED_out[6]" LOC = R11;
+NET "LED_out[5]" LOC = N11;
+NET "LED_out[4]" LOC = M11;
+NET "LED_out[3]" LOC = V15;
+NET "LED_out[2]" LOC = U15;
+NET "LED_out[1]" LOC = V16;
+NET "LED_out[0]" LOC = U16;
 
-NET "BTNin"  LOC = C4;
-NET "BTN2in"  LOC = B8;
+#NET "SWin[0]"  LOC = T10;
+#NET "SWin[1]"  LOC = T9;
+#NET "SWin[2]"  LOC = V9;
+#NET "SWin[3]"  LOC = M8;
+#NET "SWin[4]"  LOC = N8;
+#NET "SWin[5]"  LOC = U8;
+#NET "SWin[6]"  LOC = V8;
+#NET "SWin[7]"  LOC = T5;
+
+#NET "BTNin"  LOC = C4;
+#NET "BTN2in"  LOC = B8;
 
 NET "REFRESH_out" LOC = M10;
 NET "STEP_out"		LOC = N9;
@@ -26,3 +35,73 @@ NET "COLOR_out[3]" LOC = T12;
 NET "COLOR_out[2]" LOC = V12;
 NET "COLOR_out[1]" LOC = N10;
 NET "COLOR_out[0]" LOC = P11;
+
+NET "TXD_out" LOC = K2;
+NET "RXDin"	LOC = K1;
+#NET "TXD_out" LOC = N18;
+#NET "RXDin"	LOC = N17;
+
+
+
+
+#SRAM
+NET "SRAMDATA_io[0]" LOC = R13;
+NET "SRAMDATA_io[1]" LOC = T14;
+NET "SRAMDATA_io[2]" LOC = V14;
+NET "SRAMDATA_io[3]" LOC = U5;
+NET "SRAMDATA_io[4]" LOC = V5;
+NET "SRAMDATA_io[5]" LOC = R3;
+NET "SRAMDATA_io[6]" LOC = T3;
+NET "SRAMDATA_io[7]" LOC = R5;
+NET "SRAMDATA_io[8]" LOC = N5;
+NET "SRAMDATA_io[9]" LOC = P6;
+NET "SRAMDATA_io[10]" LOC = P12;
+NET "SRAMDATA_io[11]" LOC = U13;
+NET "SRAMDATA_io[12]" LOC = V13;
+NET "SRAMDATA_io[13]" LOC = U10;
+NET "SRAMDATA_io[14]" LOC = R8;
+
+NET "SRAMADDR_out[0]" LOC = K18;
+NET "SRAMADDR_out[1]" LOC = K17;
+NET "SRAMADDR_out[2]" LOC = J18;
+NET "SRAMADDR_out[3]" LOC = J16;
+NET "SRAMADDR_out[4]" LOC = G18;
+NET "SRAMADDR_out[5]" LOC = G16;
+NET "SRAMADDR_out[6]" LOC = H16;
+NET "SRAMADDR_out[7]" LOC = H15;
+NET "SRAMADDR_out[8]" LOC = H14;
+NET "SRAMADDR_out[9]" LOC = H13;
+NET "SRAMADDR_out[10]" LOC = F18;
+NET "SRAMADDR_out[11]" LOC = F17;
+NET "SRAMADDR_out[12]" LOC = K13;
+NET "SRAMADDR_out[13]" LOC = K12;
+NET "SRAMADDR_out[14]" LOC = E18;
+NET "SRAMADDR_out[15]" LOC = E16;
+NET "SRAMADDR_out[16]" LOC = G13;
+NET "SRAMADDR_out[17]" LOC = H12;
+NET "SRAMADDR_out[18]" LOC = D18;
+NET "SRAMADDR_out[19]" LOC = D17;
+NET "SRAMADDR_out[20]" LOC = G14;
+NET "SRAMADDR_out[21]" LOC = F14;
+NET "SRAMADDR_out[22]" LOC = C18;
+
+
+NET "CE1_out" LOC = L15;
+#NET "CE2_out" LOC = U16;
+NET "LB1_out" LOC = K16;
+NET "OE_out" LOC = L18;
+NET "UB1_out" LOC = K15;
+NET "WE_out" LOC = M16;
+
+#SEVEN SEG
+#NET "SEG_sel[0]" LOC = N16;
+#NET "SEG_sel[1]" LOC = N15;
+#NET "SEG_sel[2]" LOC = P18;
+#NET "SEG_sel[3]" LOC = P17;
+#NET "SEG_out[0]" LOC = T17;
+#NET "SEG_out[1]" LOC = T18;
+#NET "SEG_out[2]" LOC = U17;
+#NET "SEG_out[3]" LOC = U18;
+#NET "SEG_out[4]" LOC = M14;
+#NET "SEG_out[5]" LOC = N14;
+#NET "SEG_out[6]" LOC = L14;
